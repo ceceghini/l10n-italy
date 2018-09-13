@@ -19,9 +19,9 @@
 #
 ##############################################################################
 {
-    'name': 'Italy - Fiscal localization by zeroincombenze(R)',
+    'name': 'Italy - Fiscal localization by Zeroincombenze(R)',
     'version': '10.0.0.2.0',
-    'depends': ['base_vat', 'base_iban'],
+    'depends': ['account', 'base_vat', 'base_iban'],
     'author': 'SHS-AV s.r.l.',
     'description': """
 Italian fiscal and legal localization
