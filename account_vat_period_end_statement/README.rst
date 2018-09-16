@@ -1,3 +1,15 @@
+[![Build Status](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy.svg?branch=10.0)](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy)
+[![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
+[![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0)
+[![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0)
+[![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg)](https://github.com/OCA/l10n-italy/tree/10.0)
+[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/dev)
+[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/man/FI)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://erp10.zeroincombenze.it)
+
+
+[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
     :alt: License: AGPL-3
 
@@ -7,8 +19,11 @@ Period End VAT Statement
 This module helps to register the VAT statement of period end.
 
 
+Installation
+------------
+
 Configuration
-=============
+-------------
 
 In order to generate VAT statement's periods,
 open Accounting > Configuration > Accounting > Date range > Generate Date Ranges and select:
@@ -30,7 +45,6 @@ If you need to calculate interest, you can add default information in your
 company data (percentage and account), in the VAT statement tab.
 
 Italian - Configurazione
-------------------------
 
 Per generare i periodi della dichiarazione IVA,
 aprire Contabilità > Configurazione > Contabilità > Intervalli date > Genera intervalli date.
@@ -51,6 +65,8 @@ Per calcolare gli interessi, è possibile aggiungere le informazioni da utilizza
 nei dati aziendali, nel tab Liquidazione IVA.
 
 Usage
+-----
+
 =====
 
 In order to create a 'VAT Statement', open Accounting > Adviser > VAT Statements.
@@ -76,7 +92,6 @@ reconciliation.
 It is also possible to print the 'VAT statement' clicking on print > Print VAT period end statement.
 
 Italian - Utilizzo
-------------------
 
 Per fare la liquidazione IVA, aprire Contabilità > Contabilità > Liquidazioni IVA.
 Selezionare un sezionale che conterrà le registrazioni contabili della liquidazione.
@@ -97,11 +112,16 @@ La liquidazione può essere pagata come qualunque altro debito, con la riconcili
 
 È inoltre possibile stampare la liquidazione IVA cliccando su Stampa > Stampa liquidazione IVA.
 
-Credits
-=======
+Known issues / Roadmap
+----------------------
 
-Contributors
-------------
+Bug Tracker
+-----------
+
+Credits
+-------
+
+### Contributors
 
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Elena Carlesso <ecarlesso@linkgroup.it>
@@ -114,8 +134,9 @@ Contributors
 
 Do not contact contributors directly about support or help with technical issues.
 
-Maintainer
-----------
+### Funders
+
+### Maintainer
 
 .. image:: http://odoo-community.org/logo.png
    :alt: Odoo Community Association
@@ -128,3 +149,32 @@ mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
 To contribute to this module, please visit http://odoo-community.org.
+
+[//]: # (copyright)
+
+----
+
+**Odoo** is a trademark of [Odoo S.A.](https://www.odoo.com/) (formerly OpenERP, formerly TinyERP)
+
+**OCA**, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
+
+**Odoo Italia Associazione**, or the [Associazione Odoo Italia](https://www.odoo-italia.org/)
+is the nonprofit Italian Community Association whose mission
+is to support the collaborative development of Odoo designed for Italian law and markeplace.
+Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
+or available only with Odoo Proprietary License.
+Odoo Italia Associazione distributes code under [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) or [LGPL](https://www.gnu.org/licenses/lgpl.html) free license.
+
+[Odoo Italia Associazione](https://www.odoo-italia.org/) è un'Associazione senza fine di lucro
+che dal 2017 rilascia moduli per la localizzazione italiana non sviluppati da OCA
+o disponibili solo con [Odoo Proprietary License](https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html).
+
+Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) o [LGPL](https://www.gnu.org/licenses/lgpl.html)
+
+[//]: # (end copyright)
+
+
+
+[![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
