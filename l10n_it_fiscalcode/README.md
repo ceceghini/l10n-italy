@@ -2,10 +2,7 @@
 [![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
 [![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0)
 [![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0)
-[![OCA_project](http://www.Odoo-Italia-Associazione.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg)](https://github.com/OCA/l10n-italy/tree/10.0)
-[![Tech Doc](http://www.Odoo-Italia-Associazione.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.Odoo-Italia-Associazione.org/en/Odoo/10.0/dev)
-[![Help](http://www.Odoo-Italia-Associazione.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.Odoo-Italia-Associazione.org/en/Odoo/10.0/man/FI)
-[![try it](http://www.Odoo-Italia-Associazione.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://odoo10.odoo-italia.org)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://odoo10.odoo-italia.org)
 
 
 [![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
@@ -26,7 +23,6 @@ Modulo che gestisce il codice fiscale.
 
 
 Funzionalità & Differenze da OCA:
----------------------------------
 
 Funzione                         | Status | OCA  | Note
 Calcola codice fiscale           | :white_check_mark: | :white_check_mark: |
@@ -35,7 +31,7 @@ Verifica Partita IVA come codice fiscale  | :white_check_mark: | :x: |
 
 
 Installation
-============
+------------
 
 To install this module, you need to:
 
@@ -43,22 +39,23 @@ Install Python Depends `codicefiscale <https://pypi.python.org/pypi/codicefiscal
 
 
 Configuration
-=============
+-------------
 
 Usage
+-----
+
 =====
 
 Known issues / Roadmap
-======================
+----------------------
 
 Bug Tracker
-===========
+-----------
 
 Credits
-=======
+-------
 
-Contributors
-------------
+### Contributors
 
 * Davide Corio <davide.corio@abstract.it>
 * Luca Subiaco <subluca@gmail.com>
@@ -74,15 +71,13 @@ Contributors
 * Alex Comba <alex.comba@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
-Funders
-=======
+### Funders
 
 This module has been financially supported by
 
 * SHS-AV s.r.l. <https://www.zeroincombenze.it/>
 
-Maintainer
-----------
+### Maintainer
 
 [![Odoo Italia Associazione](https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png)](https://odoo-italia.org)
 
@@ -116,3 +111,8 @@ o disponibili solo con [Odoo Proprietary License](https://www.odoo.com/documenta
 Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) o [LGPL](https://www.gnu.org/licenses/lgpl.html)
 
 [//]: # (end copyright)
+
+
+
+
+
