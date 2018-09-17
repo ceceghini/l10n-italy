@@ -171,3 +171,5 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL
 [//]: # (end addons)
 
 
+
+
