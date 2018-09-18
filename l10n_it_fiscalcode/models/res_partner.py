@@ -61,14 +61,14 @@ class ResPartner(models.Model):
         for partner in self:
             lastname, firstname = self._split_last_first_name(
                 partner=partner)
-            self.lastname = lastname
+            partner.lastname = lastname
 
     @api.multi
     def _split_first_name(self):
         for partner in self:
             lastname, firstname = self._split_last_first_name(
                 partner=partner)
-            self.firstname = firstname
+            partner.firstname = firstname
 
     @api.multi
     def _split_last_first_name(self, partner=None, name=None, splitmode=None):
