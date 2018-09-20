@@ -2,24 +2,36 @@
 [![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
 [![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=11.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=11.0)
 [![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/11.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/11.0)
-[![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-11.svg)](https://github.com/OCA/l10n-italy/tree/11.0)
-[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-11.svg)](http://wiki.zeroincombenze.org/en/Odoo/11.0/dev)
-[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-11.svg)](http://wiki.zeroincombenze.org/en/Odoo/11.0/man/FI)
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-11.svg)](https://erp11.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-   :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-   :alt: License: AGPL-3
-
-==============
-IT Fiscal Code
-==============
+Italian Fiscal Code
+===================
 
 This module extends the functionality of partner to fit italian laws and mores
 and to allow you to computation Fiscal code computation for partner
+
+
+[![it](https://github.com/zeroincombenze/grymb/blob/master/flags/it_IT.png)](https://www.facebook.com/groups/openerp.italia/)
+
+Codice Fiscale Italiano
+=======================
+
+Modulo che gestisce il codice fiscale. Permette di calcolare il codice fiscale e
+verifica la validità del codice fiscale inserito, se soggetto italiano.
+
+Fornisce anche la separazione del cognome/nome per la gestione della comunicazione IVA.
+
+
+Funzionalità & Differenze da OCA:
+
+Funzione                         | Status | OCA  | Note
+Calcola codice fiscale           | :white_check_mark: | :white_check_mark: |
+Verifica validità codice fiscale | :white_check_mark: | :x: | Controllo attivo solo per soggetti italiani
+Verifica Partita IVA come codice fiscale  | :white_check_mark: | :x: | 
+
 
 Installation
 ------------
@@ -27,6 +39,7 @@ Installation
 To install this module, you need to:
 
 Install Python Depends `codicefiscale <https://pypi.python.org/pypi/codicefiscale>`_.
+
 
 Configuration
 -------------
@@ -36,29 +49,14 @@ Usage
 
 =====
 
-To use this module, you need to:
-
-#. Go to Partner and Run Wizard "Compute F.C."
-
-.. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
-   :alt: Try me on Runbot
-   :target: https://runbot.odoo-community.org/runbot/122/10.0
-
-
 Known issues / Roadmap
 ----------------------
 
 Bug Tracker
 -----------
 
-Bugs are tracked on `GitHub Issues
-<https://github.com/OCA/l10n-italy/issues>`_. In case of trouble, please
-check there if your issue has already been reported. If you spotted it first,
-help us smashing it by providing a detailed and welcomed feedback.
-
 Credits
 -------
-
 
 ### Contributors
 
@@ -70,26 +68,27 @@ Credits
 * Giovanni Barzan <giovanni.barzan@gmail.com>
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Roberto Onnis <onnis.roberto@gmail.com>
-* Franco Tampieri <franco.tampieri@agilebg.com>
+* Franco Tampieri <franco@tampieri.info>
 * Andrea Cometa <info@andreacometa.it>
 * Andrea Gallina <a.gallina@apuliasoftware.it>
-
+* Alex Comba <alex.comba@agilebg.com>
+* Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
 ### Funders
 
+This module has been financially supported by
+
+* SHS-AV s.r.l. <https://www.zeroincombenze.it/>
+
 ### Maintainer
 
-.. image:: https://odoo-community.org/logo.png
-   :alt: Odoo Community Association
-   :target: https://odoo-community.org
+[![Odoo Italia Associazione](https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png)](https://odoo-italia.org)
 
-This module is maintained by the OCA.
+Odoo Italia is a nonprofit organization whose develops Italian Localization for
+Odoo.
 
-OCA, or the Odoo Community Association, is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.
+To contribute to this module, please visit <https://odoo-italia.org/>.
 
-To contribute to this module, please visit https://odoo-community.org.
 
 [//]: # (copyright)
 
@@ -118,4 +117,5 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL
 
 
 
-[![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
+
+
