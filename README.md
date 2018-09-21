@@ -2,7 +2,7 @@
 [![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
 [![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0)
 [![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0)
-[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://erp10.zeroincombenze.it)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://odoo10.odoo-italia.org)
 
 
 [![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
@@ -20,6 +20,7 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[account_invoice_entry_date](account_invoice_entry_date/) | 10.0.0.1.0 | Account Invoice entry Date
 [account_invoice_report_ddt_group](account_invoice_report_ddt_group/) | 10.0.0.3.1 | Account invoice report grouped by DDT
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 10.0.1.4.2 | Period End VAT Statement
 [l10n_it_abicab](l10n_it_abicab/) | 10.0.1.0.0 | Base Bank ABI/CAB codes
@@ -41,11 +42,13 @@ addon | version | summary
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 10.0.1.1.1 | Reverse Charge for Italy
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 10.0.1.1.0 | Ricevute Bancarie
 [l10n_it_split_payment](l10n_it_split_payment/) | 10.0.1.0.2 | Split Payment
+[l10n_it_vat_communication](l10n_it_vat_communication/) | 10.0.0.1.12 | Comunicazione periodica IVA
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 10.0.1.2.1 | Italian Localization - VAT Registries
 [l10n_it_vat_registries_cash_basis](l10n_it_vat_registries_cash_basis/) | 10.0.1.0.0 | Italian Localization - VAT Registries - Cash Basis
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 10.0.1.0.1 | Website Sale FiscalCode
 [l10n_it_withholding_tax](l10n_it_withholding_tax/) | 10.0.1.2.2 | Italian Withholding Tax
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 10.0.1.1.0 | Italian Withholding Tax Payment
+[multibase_plus](multibase_plus/) | 10.0.0.1.2 | Enhanced Odoo Features
 
 
 Unported addons
@@ -54,7 +57,6 @@ addon | version | summary
 --- | --- | ---
 [account_central_journal](account_central_journal/) | 3 (unported) | Account Central Journal
 [account_fiscal_year_closing](account_fiscal_year_closing/) | 1.0 (unported) | Fiscal Year Closing
-[account_invoice_entry_date](account_invoice_entry_date/) | 8.0.0.1.0 (unported) | Account Invoice entry Date
 [account_invoice_sequential_dates](account_invoice_sequential_dates/) | 0.1 (unported) | Check invoice date consistency
 [l10n_it_CEE_balance_generic](l10n_it_CEE_balance_generic/) | 0.1 (unported) | Italy - 4th EU Directive - Consolidation Chart of Accounts
 [l10n_it_base_crm](l10n_it_base_crm/) | 0.1 (unported) | Italian Localisation - CRM
