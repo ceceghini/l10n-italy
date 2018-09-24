@@ -78,6 +78,7 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[account_invoice_entry_date](account_invoice_entry_date/) | 9.0.0.1.1 | Account Invoice entry Date
 [l10n_it_abicab](l10n_it_abicab/) | 9.0.1.0.0 | Base Bank ABI/CAB codes
 [l10n_it_ade](l10n_it_ade/) | 9.0.0.1.9 | Codice con le definizioni dei file xml Agenzia delle Entrate
 [l10n_it_base](l10n_it_base/) | 9.0.0.1.3 | Italian Localisation - Base
@@ -86,6 +87,7 @@ addon | version | summary
 [l10n_it_fiscal](l10n_it_fiscal/) | 9.0.0.2.0 | Italy - Fiscal localization by zeroincombenze(R)
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 9.0.0.2.0 | Italian Localisation - Fiscal Code
 [l10n_it_rea](l10n_it_rea/) | 9.0.0.1.0 | Manage fields for Economic Administrative catalogue
+[multibase_plus](multibase_plus/) | 9.0.0.1.1 | Enhanced Odoo Features
 
 
 Unported addons
@@ -94,7 +96,6 @@ addon | version | summary
 --- | --- | ---
 [account_central_journal](account_central_journal/) | 3 (unported) | Account Central Journal
 [account_fiscal_year_closing](account_fiscal_year_closing/) | 1.0 (unported) | Fiscal Year Closing
-[account_invoice_entry_date](account_invoice_entry_date/) | 8.0.0.1.0 (unported) | Account Invoice entry Date
 [account_invoice_sequential_dates](account_invoice_sequential_dates/) | 0.1 (unported) | Check invoice date consistency
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 8.0.2.0.0 (unported) | Period End VAT Statement
 [l10n_it_CEE_balance_generic](l10n_it_CEE_balance_generic/) | 0.1 (unported) | Italy - 4th EU Directive - Consolidation Chart of Accounts
@@ -143,5 +144,6 @@ o disponibili solo con [Odoo Proprietary License](https://www.odoo.com/documenta
 Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) o [LGPL](https://www.gnu.org/licenses/lgpl.html)
 
 [//]: # (end copyright)
+
 
 
