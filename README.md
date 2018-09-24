@@ -25,7 +25,7 @@ addon | version | summary
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 10.0.1.4.2 | Period End VAT Statement
 [l10n_it_abicab](l10n_it_abicab/) | 10.0.1.0.0 | Base Bank ABI/CAB codes
 [l10n_it_account](l10n_it_account/) | 10.0.1.0.1 | Italian Localization - Account
-[l10n_it_ade](l10n_it_ade/) | 10.0.0.1.9 | Codice con le definizioni dei file xml Agenzia delle Entrate
+[l10n_it_ade](l10n_it_ade/) | 10.0.0.1.10 | Codice con le definizioni dei file xml Agenzia delle Entrate
 [l10n_it_ateco](l10n_it_ateco/) | 10.0.1.0.0 | Ateco codes
 [l10n_it_base](l10n_it_base/) | 10.0.0.1.3 | Italian Localisation - Base
 [l10n_it_base_location_geonames_import](l10n_it_base_location_geonames_import/) | 10.0.1.0.0 | Import base_location entries (provinces) from Geonames
@@ -43,7 +43,7 @@ addon | version | summary
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 10.0.1.1.0 | Ricevute Bancarie
 [l10n_it_split_payment](l10n_it_split_payment/) | 10.0.1.0.2 | Split Payment
 [l10n_it_vat_communication](l10n_it_vat_communication/) | 10.0.0.1.12 | Comunicazione periodica IVA
-[l10n_it_vat_registries](l10n_it_vat_registries/) | 10.0.1.2.1 | Italian Localization - VAT Registries
+[l10n_it_vat_registries](l10n_it_vat_registries/) | 10.0.1.2.2 | Italian Localization - VAT Registries
 [l10n_it_vat_registries_cash_basis](l10n_it_vat_registries_cash_basis/) | 10.0.1.0.0 | Italian Localization - VAT Registries - Cash Basis
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 10.0.1.0.1 | Website Sale FiscalCode
 [l10n_it_withholding_tax](l10n_it_withholding_tax/) | 10.0.1.2.2 | Italian Withholding Tax
