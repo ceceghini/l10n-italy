@@ -5,156 +5,76 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-9.svg)](https://erp9.zeroincombenze.it)
 
 
+[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+
+[![icon](static/src/img/icon.png)](https://travis-ci.org/zeroincombenze)
+
+
+Italian Fiscal Payment Terms
+============================
+
+E-Invoice and FatturaPA Payment Terms as http://fatturapa.gov.it
+
+
+[![it](https://github.com/zeroincombenze/grymb/blob/master/flags/it_IT.png)](https://www.facebook.com/groups/openerp.italia/)
+
+Termini di Pagamento Fiscali 
+=============================
+
+Termini di pagamento per Fattura Elettronica e fatturaPA come da http://fatturapa.gov.it
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
-
-    :alt: License
-
-
-Italian Localization - FatturaPA - Emission
-===========================================
-
-This module allows you to generate the fatturaPA XML file version 1.1
-http://www.fatturapa.gov.it/export/fatturazione/en/normativa/f-2.htm
-to be sent to the Exchange System
-http://www.fatturapa.gov.it/export/fatturazione/en/sdi.htm
 
 
 Installation
 ------------
 
-
-
-
-
 Configuration
 -------------
-
-
-
-
-
-
-See l10n_it_fatturapa
-
 
 Usage
 -----
 
-
-
-
-
-
-=====
-
- * Fill invoice data you need to export. For instance, in 'related documents' TAB, or in 'related documents' section within invoice line.
- * Select N invoices and run 'Export FatturaPA' wizard
-
 Known issues / Roadmap
 ----------------------
-
-
-
-
 
 Bug Tracker
 -----------
 
-
-
-
-
 Credits
 -------
 
-
-
-
-
-
-
-
-
-
-
 ### Contributors
 
-
-
-
-
-
-* Davide Corio <davide.corio@abstract.it>
+* Davide Corio
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Roberto Onnis <roberto.onnis@innoviu.com>
 * Alessio Gerace <alessio.gerace@agilebg.com>
+* Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>
+
+
 
 ### Funders
 
+Questo modulo è stato sviluppato con il contributo di
+
+* Agile BG <https://www.agilebg.com/>
+* Innoviu <https://www.innoviu.com/>
+* SHS-AV s.r.l. <https://www.zeroincombenze.it/>
+* Odoo Community Association (OCA) <https://odoo-community.org/>
+* Odoo Italia Associazione <https://odoo-italia.org/>
+
+
 ### Maintainer
 
+[![Odoo Italia Associazione](https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png)](https://odoo-italia.org)
 
+Odoo Italia is a nonprofit organization whose develops Italian Localization for
+Odoo.
 
+To contribute to this module, please visit <https://odoo-italia.org/>.
 
-
-
-
-
-
-
-.. image:: http://odoo-community.org/logo.png
-   :alt: Odoo Community Association
-   :target: http://odoo-community.org
-
-This module is maintained by the OCA.
-
-OCA, or the Odoo Community Association, is a nonprofit organization whose mission is to support the collaborative development of Odoo features and promote its widespread use.
-
-To contribute to this module, please visit http://odoo-community.org.
 
 [//]: # (copyright)
 

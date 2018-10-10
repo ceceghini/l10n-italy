@@ -2,7 +2,7 @@
 [![license agpl](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.html)
 [![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=9.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=9.0)
 [![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/9.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/9.0)
-[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-9.svg)](https://odoo9.odoo-italia.org)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-9.svg)](https://erp9.zeroincombenze.it)
 
 
 
@@ -80,12 +80,14 @@ addon | version | summary
 --- | --- | ---
 [account_invoice_entry_date](account_invoice_entry_date/) | 9.0.0.1.1 | Account Invoice entry Date
 [l10n_it_abicab](l10n_it_abicab/) | 9.0.1.0.0 | Base Bank ABI/CAB codes
-[l10n_it_ade](l10n_it_ade/) | 9.0.0.1.9 | Codice con le definizioni dei file xml Agenzia delle Entrate
+[l10n_it_ade](l10n_it_ade/) | 9.0.0.1.10 | Codice con le definizioni dei file xml Agenzia delle Entrate
 [l10n_it_base](l10n_it_base/) | 9.0.0.1.3 | Italian Localisation - Base
 [l10n_it_base_location_geonames_import](l10n_it_base_location_geonames_import/) | 9.0.0.1.0 | Import base_location entries (provinces) from Geonames
 [l10n_it_ddt](l10n_it_ddt/) | 9.0.1.0.0 | Documento di Trasporto
 [l10n_it_fiscal](l10n_it_fiscal/) | 9.0.0.2.0 | Italy - Fiscal localization by zeroincombenze(R)
+[l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 9.0.1.0.0 | Electronic invoices payment
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 9.0.0.2.0 | Italian Localisation - Fiscal Code
+[l10n_it_ipa](l10n_it_ipa/) | 9.0.1.0.0 | IPA Code (IndicePA)
 [l10n_it_rea](l10n_it_rea/) | 9.0.0.1.0 | Manage fields for Economic Administrative catalogue
 [multibase_plus](multibase_plus/) | 9.0.0.1.1 | Enhanced Odoo Features
 
@@ -104,9 +106,8 @@ addon | version | summary
 [l10n_it_base_crm](l10n_it_base_crm/) | 0.1 (unported) | Italian Localisation - CRM
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 0.1 (unported) | Italian Localisation - Bill of Entry
 [l10n_it_corrispettivi](l10n_it_corrispettivi/) | 0.1 (unported) | Italian Localisation - Corrispettivi
-[l10n_it_fatturapa](l10n_it_fatturapa/) | 8.0.0.1.0 (unported) | Electronic invoices
+[l10n_it_fatturapa](l10n_it_fatturapa/) | 9.0.2.1.0 (unported) | Electronic invoices
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 8.0.0.1.1 (unported) | Electronic invoices emission
-[l10n_it_ipa](l10n_it_ipa/) | 8.0.1.0.0 (unported) | IPA Code (IndicePA)
 [l10n_it_partially_deductible_vat](l10n_it_partially_deductible_vat/) | 0.1 (unported) | Italy - Partially Deductible VAT
 [l10n_it_pec](l10n_it_pec/) | 8.0.0.1.0 (unported) | Pec Mail
 [l10n_it_prima_nota_cassa](l10n_it_prima_nota_cassa/) | 0.1 (unported) | Italian Localisation - Prima Nota Cassa

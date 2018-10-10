@@ -2,74 +2,94 @@
 [![license agpl](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.html)
 [![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=9.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=9.0)
 [![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/9.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/9.0)
+[![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-9.svg)](https://github.com/OCA/l10n-italy/tree/9.0)
+[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-9.svg)](http://wiki.zeroincombenze.org/en/Odoo/9.0/dev)
+[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-9.svg)](http://wiki.zeroincombenze.org/en/Odoo/9.0/man/FI)
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-9.svg)](https://erp9.zeroincombenze.it)
-
 
 [![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-    :alt: License
+IPA Code
+========
 
-Italian Localization - FatturaPA
-================================
+This module adds IPA (IndicePA) field to partner, used by http://fatturapa.gov.it
 
-Base module to handle FatturaPA data.
-http://fatturapa.gov.it
 
-See l10n_it_fatturapa_out and l10n_it_fatturapa_in.
+[![it](https://github.com/zeroincombenze/grymb/blob/master/flags/it_IT.png)](https://www.facebook.com/groups/openerp.italia/)
+
+Codice IPA
+==========
+
+Gestione Codice Identitifcativo Pubblica Amministrazione per emissione http://fatturapa.gov.it
+
 
 
 Installation
 ------------
 
-This module requires PyXB 1.2.4
-http://pyxb.sourceforge.net/
+These instruction are just an example to remember what you have to do:
+
+    git clone https://github.com/zeroincombenze/l10n-italy
+    cp -R l10n-italy/l10n_it_ade ODOO_DIR/l10n-italy/
+    sudo service odoo-server restart -i l10n_it_ipa -d MYDB
+
+From UI: go to Setup > Module > Install
 
 
 Configuration
 -------------
 
- * Edit the FatturaPA fields of the partners (in partner form) who will receive (send) the
-   electronic invoices. IPA code is mandatory, EORI code is not.
- * Configure payment terms filling the fatturaPA fields related to payment
-   terms and payment methods.
- * Configure taxes about 'Non taxable nature', 'Law reference' and 'VAT payability'
- * Configure FatturaPA data in Accounting Configuration. Note that a sequence 'fatturaPA' is already loaded by the module and selectable.
+:mute:
+
 
 Usage
 -----
 
+For furthermore information, please visit http://wiki.zeroincombenze.org/it/Odoo/7.0/man/FI
+
+
 Known issues / Roadmap
 ----------------------
 
+:ticket: This module replace OCA module; PR will be issued
+In order to use this module you have to use:
+
+* [l10n_it_base](l10n_it_base/) replaces OCA module
+
+
 Bug Tracker
 -----------
+
+Have a bug? Please visit https://odoo-italia.org/index.php/kunena/home
 
 Credits
 -------
 
 ### Contributors
 
-* Davide Corio <davide.corio@abstract.it>
-* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
-* Roberto Onnis <roberto.onnis@innoviu.com>
-* Alessio Gerace <alessio.gerace@agilebg.com>
+* Luigi Di Naro <luigi.dinaro@ktec.it>
+* Alex Comba <alex.comba@agilebg.com>
+* Antonio Maria Vigliotti <info@shs-av.co>
+
 
 ### Funders
 
+This module has been financially supported by
+
+* KTec S.r.l. <http://www.ktec.it/">
+* Agile Business Group sagl <http://www.agilebg.com/>
+* SHS-AV s.r.l. <https://www.zeroincombenze.it/>
+
+
 ### Maintainer
 
-.. image:: http://odoo-community.org/logo.png
-   :alt: Odoo Community Association
-   :target: http://odoo-community.org
+[![Odoo Italia Associazione](https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png)](https://odoo-italia.org)
 
-This module is maintained by the OCA.
+Odoo Italia is a nonprofit organization whose develops Italian Localization for
+Odoo.
 
-OCA, or the Odoo Community Association, is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.
+To contribute to this module, please visit <https://odoo-italia.org/>.
 
-To contribute to this module, please visit http://odoo-community.org.
 
 [//]: # (copyright)
 
@@ -96,7 +116,8 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL
 
 [//]: # (end copyright)
 
+[//]: # (addons)
 
+[//]: # (end addons)
 
-
-
+[![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
