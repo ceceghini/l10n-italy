@@ -2,7 +2,7 @@
 [![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
 [![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0)
 [![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0)
-[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://odoo10.odoo-italia.org)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://erp10.zeroincombenze.it)
 
 
 [![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
@@ -29,11 +29,11 @@ addon | version | summary
 [l10n_it_ateco](l10n_it_ateco/) | 10.0.1.0.0 | Ateco codes
 [l10n_it_base](l10n_it_base/) | 10.0.0.1.3 | Italian Localisation - Base
 [l10n_it_base_location_geonames_import](l10n_it_base_location_geonames_import/) | 10.0.1.0.0 | Import base_location entries (provinces) from Geonames
-[l10n_it_codici_carica](l10n_it_codici_carica/) | 10.0.1.0.0 | Aggiunge la tabella dei codici carica da usare nei dichiarativi fiscali italiani
 [l10n_it_corrispettivi](l10n_it_corrispettivi/) | 10.0.1.1.0 | Italian Localization - Corrispettivi
 [l10n_it_ddt](l10n_it_ddt/) | 10.0.1.5.1 | Documento di Trasporto
 [l10n_it_esigibilita_iva](l10n_it_esigibilita_iva/) | 10.0.1.0.0 | Esigibilità IVA
 [l10n_it_fiscal](l10n_it_fiscal/) | 10.0.0.2.0 | Italy - Fiscal localization by zeroincombenze(R)
+[l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 10.0.1.0.0 | Electronic invoices payment
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 10.0.1.0.2 | Italian Localisation - Fiscal Code
 [l10n_it_fiscalcode_invoice](l10n_it_fiscalcode_invoice/) | 10.0.1.0.0 | Italian Fiscal Code in invoice PDF
 [l10n_it_ipa](l10n_it_ipa/) | 10.0.1.0.0 | IPA Code (IndicePA)
@@ -42,13 +42,12 @@ addon | version | summary
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 10.0.1.1.1 | Reverse Charge for Italy
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 10.0.1.1.0 | Ricevute Bancarie
 [l10n_it_split_payment](l10n_it_split_payment/) | 10.0.1.0.2 | Split Payment
-[l10n_it_vat_communication](l10n_it_vat_communication/) | 10.0.0.1.12 | Comunicazione periodica IVA
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 10.0.1.2.2 | Italian Localization - VAT Registries
 [l10n_it_vat_registries_cash_basis](l10n_it_vat_registries_cash_basis/) | 10.0.1.0.0 | Italian Localization - VAT Registries - Cash Basis
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 10.0.1.0.1 | Website Sale FiscalCode
 [l10n_it_withholding_tax](l10n_it_withholding_tax/) | 10.0.1.2.2 | Italian Withholding Tax
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 10.0.1.1.0 | Italian Withholding Tax Payment
-[multibase_plus](multibase_plus/) | 10.0.0.1.2 | Enhanced Odoo Features
+[multibase_plus](multibase_plus/) | 10.0.0.1.3 | Enhanced Odoo Features
 
 
 Unported addons
@@ -61,12 +60,13 @@ addon | version | summary
 [l10n_it_CEE_balance_generic](l10n_it_CEE_balance_generic/) | 0.1 (unported) | Italy - 4th EU Directive - Consolidation Chart of Accounts
 [l10n_it_base_crm](l10n_it_base_crm/) | 0.1 (unported) | Italian Localisation - CRM
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 0.1 (unported) | Italian Localisation - Bill of Entry
-[l10n_it_fatturapa](l10n_it_fatturapa/) | 10.0.1.0.0 (unported) | Electronic invoices
+[l10n_it_fatturapa](l10n_it_fatturapa/) | 10.0.2.0.1 (unported) | Electronic invoices
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 10.0.1.0.0 (unported) | Electronic invoices emission
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 10.0.0.1.0 (unported) | Italian Localization - Tipi di documento fiscali per dichiarativi
 [l10n_it_partially_deductible_vat](l10n_it_partially_deductible_vat/) | 0.1 (unported) | Italy - Partially Deductible VAT
 [l10n_it_prima_nota_cassa](l10n_it_prima_nota_cassa/) | 0.1 (unported) | Italian Localisation - Prima Nota Cassa
 [l10n_it_riba_commission](l10n_it_riba_commission/) | 10.0.1.0.1 (unported) | Ricevute bancarie & commissioni
+[l10n_it_vat_communication](l10n_it_vat_communication/) | 10.0.0.1.12 (unported) | Comunicazione periodica IVA
 [l10n_it_website_sale_corrispettivi](l10n_it_website_sale_corrispettivi/) | 10.0.1.1.0 (unported) | Italian localization - Website Sale Corrispettivi
 
 [//]: # (end addons)
