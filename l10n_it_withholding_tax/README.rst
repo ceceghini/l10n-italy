@@ -1,142 +1,202 @@
-[![Build Status](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy.svg?branch=10.0)](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy)
-[![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
-[![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0)
-[![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0)
-[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://erp10.zeroincombenze.it)
+|Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
+
+.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/10.0/l10n_it_withholding_tax/static/description/icon.png
+
+==============================
+|icon| Italian Withholding Tax
+==============================
+
+.. contents::
 
 
-[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
+|en|
 
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-   :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-   :alt: License: AGPL-3
 
-=======================
-Italian Withholding Tax
-=======================
 
-La ritenuta d’acconto odoo provvede a calcolare automaticamente i valori delle diverse tipologie di ritenuta presenti nella contaiblità italiana.
+|it|
 
-In odoo ritenuta d’acconto è possibile, tramite apposito workflow, gestire i diversi passaggi di stato delle ritenute rilevate: dovuta, applicata, versata
+
+
+
+
+
+|en|
+
 
 Installation
-------------
+=============
 
-Configuration
--------------
+These instruction are just an example to remember what you have to do.
+Installation is based on `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__
+Deployment is ODOO_DIR/REPOSITORY_DIR/MODULE_DIR where:
 
-Usage
------
+| ODOO_DIR is root Odoo directory, i.e. /opt/odoo/10.0
+| REPOSITORY_DIR is downloaded git repository directory, currently is: l10n-italy
+| MODULE_DIR is module directory, currently is: l10n_it_withholding_tax
+| MYDB is the database name
+|
 
-=====
+::
 
-Per prima cosa dovremo creare una ritenuta d’acconto odoo dove inserire tutti i campi necessari per un corretto calcolo.
+    pip install codicefiscale
+    pip install unidecode
+    pip install pyxb==1.2.4
+    cd $HOME
+    git clone https://github.com/zeroincombenze/tools.git
+    cd ./tools
+    ./install_tools.sh -p
+    export PATH=$HOME/dev:$PATH
+    odoo_install_repository l10n-italy -b 10.0 -O oia
 
-Visto che le aliquote possono variare nel corso del tempo, nella codifica sono previsti scaglioni temporali di competenza.
 
-E’ necessario anche inserire i conti contabili che verranno utilizzati quando il modulo si occuperà di generare registrazioni contabili per la rilevazione della ritenuta.
+From UI: go to:
 
-.. figure:: https://raw.githubusercontent.com/OCA/l10n-italy/10.0/l10n_it_withholding_tax/static/img/ritenuta-acconto-odoo-codifica-768x457.png
-   :alt: alternative description
-   :width: 600 px
+|menu| Setting > Activate Developer mode 
 
-Una volta aggiunta, nella tabella ritenute, potrà essere utilizzata all’interno della fattura, in corrispondenza delle righe soggette a ritenute.
+|menu| Apps > Update Apps List
 
-Per ogni riga è possibile utilizzare più di una ritenuta. Per alcune casistiche il moduo ritenute viene usato anche per rilevare le trattenute INPS.
+|menu| Setting > Apps |right_do| Select **l10n_it_withholding_tax** > Install
 
-Il modulo ritenute per Odoo calcolerà i valori corrispondenti e ne mostrerà il dettaglio nell’apposita area ritenute, dove è possibile verificare per ogni codice ritenuta usato, l’imponibile e l’importo ritenuta applicato.
+|warning| If your Odoo instance crashes, you can do following instruction
+to recover installation status:
 
-In calce ai totali, verrà totalizzato l’ammontare della ritenuta e il netto a pagare. Questa sezione sarà visibile solamente in presenza di almeno una ritenuta
+``run_odoo_debug 10.0 -um l10n_it_withholding_tax -s -d MYDB``
 
-.. figure:: https://raw.githubusercontent.com/OCA/l10n-italy/10.0/l10n_it_withholding_tax/static/img/fattura-fornitore-768x517.png
-   :alt: alternative description
-   :width: 600 px
 
-Successivamente andando nella sezione situazione ritenute d’acconto odoo vi mostrerà una situazione riepilogativa delle varie ritenute divisa per documento di origine.
 
-I campi principalmente da tenere in considerazione in questa tabella sono: ritenuta dovuta, ritenuta applicata e ritenuta versata.
 
-*Ritenuta dovuta* contiene il valore della ritenuta contenuta nella fattura.
 
-*Ritenuta applicata* mostra il valore della ritenuta rilevata al momento del pagamento della fattura.
 
-*Ritenuta versata* contiene l’importo di ritenuta, già applicata, che è stata versata all’erario
 
-.. figure:: https://raw.githubusercontent.com/OCA/l10n-italy/10.0/l10n_it_withholding_tax/static/img/foto-3-1-1024x505.png
-   :alt: alternative description
-   :width: 600 px
-
-.. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
-   :alt: Try me on Runbot
-   :target: https://runbot.odoo-community.org/runbot/122/8.0
 
 Known issues / Roadmap
-----------------------
+=======================
 
-Bug Tracker
------------
+|warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
+paragrafo relativo alle funzionalità e differenze.
 
-Bugs are tracked on `GitHub Issues
-<https://github.com/OCA/l10n-italy/issues>`_. In case of trouble, please
-check there if your issue has already been reported. If you spotted it first,
-help us smash it by providing detailed and welcomed feedback
+
+
+
+
+Issue Tracker
+==============
+
+Bug reports are welcome! You can use the issue tracker to report bugs,
+and/or submit pull requests on `GitHub Issues
+<https://github.com/Odoo-Italia-Associazione/l10n-italy/issues>`_.
+
+In case of trouble, please check there if your issue has already been reported.
+
+
+Proposals for enhancement
+--------------------------
+
+If you have a proposal to change this module, you may want to send an email to
+<moderatore@odoo-italia.org> for initial feedback.
+An Enhancement Proposal may be submitted if your idea gains ground.
+
+
+
+
+
 
 Credits
--------
+========
 
-### Contributors
+Authors
+--------
 
-* Alessandro Camilli <alessandrocamilli@openforce.it>
-* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
+* `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
-### Funders
+Contributors
+-------------
 
-### Maintainer
+* Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
-.. image:: https://odoo-community.org/logo.png
-   :alt: Odoo Community Association
-   :target: https://odoo-community.org
+Maintainers
+------------
 
-This module is maintained by the OCA.
+|Odoo Italia Associazione|
 
-OCA, or the Odoo Community Association, is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.
+This module is maintained by the Odoo Italia Associazione.
 
-To contribute to this module, please visit https://odoo-community.org.
+To contribute to this module, please visit https://odoo-italia.org/.
 
-Sponsor
 
-'Odoo Italia Network <http://www.odoo-italia.net/>'_
 
-[//]: # (copyright)
 
-----
+----------------
 
-**Odoo** is a trademark of [Odoo S.A.](https://www.odoo.com/) (formerly OpenERP, formerly TinyERP)
+**Odoo** is a trademark of `Odoo S.A. <https://www.odoo.com/>`__
+(formerly OpenERP)
 
-**OCA**, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
-promote its widespread use.
+**OCA**, or the `Odoo Community Association <http://odoo-community.org/>`__,
+is a nonprofit organization whose mission is to support
+the collaborative development of Odoo features and promote its widespread use.
 
-**Odoo Italia Associazione**, or the [Associazione Odoo Italia](https://www.odoo-italia.org/)
+**Odoo Italia Associazione**, or the `Associazione Odoo Italia <https://www.odoo-italia.org/>`__
 is the nonprofit Italian Community Association whose mission
 is to support the collaborative development of Odoo designed for Italian law and markeplace.
 Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
 or available only with Odoo Proprietary License.
-Odoo Italia Associazione distributes code under [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) or [LGPL](https://www.gnu.org/licenses/lgpl.html) free license.
+Odoo Italia Associazione distributes code under `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
+or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free license.
 
-[Odoo Italia Associazione](https://www.odoo-italia.org/) è un'Associazione senza fine di lucro
+`Odoo Italia Associazione <https://www.odoo-italia.org/>`__ è un'Associazione senza fine di lucro
 che dal 2017 rilascia moduli per la localizzazione italiana non sviluppati da OCA
-o disponibili solo con [Odoo Proprietary License](https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html).
+o disponibili solo con `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
 
-Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) o [LGPL](https://www.gnu.org/licenses/lgpl.html)
-
-[//]: # (end copyright)
-
+Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
+o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
 
-
-
+.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
+    :target: https://odoo-community.org/page/development-status
+    :alt: Alfa
+.. |Build Status| image:: https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy.svg?branch=10.0
+    :target: https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy
+    :alt: github.com
+.. |license gpl| image:: https://img.shields.io/badge/licence-LGPL--3-7379c3.svg
+    :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
+    :alt: License: LGPL-3
+.. |Coverage Status| image:: https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0
+    :target: https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0
+    :alt: Coverage
+.. |Codecov Status| image:: https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg
+    :target: https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0
+    :alt: Codecov
+.. |OCA project| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg
+    :target: https://github.com/OCA/l10n-italy/tree/10.0
+    :alt: OCA
+.. |Tech Doc| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg
+    :target: http://wiki.zeroincombenze.org/en/Odoo/10.0/dev
+    :alt: Technical Documentation
+.. |Help| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg
+    :target: http://wiki.zeroincombenze.org/it/Odoo/10.0/man
+    :alt: Technical Documentation
+.. |Try Me| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
+    :target: https://odoo10.odoo-italia.org
+    :alt: Try Me
+.. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
+   :target: https://odoo-italia.org
+   :alt: Odoo Italia Associazione
+.. |en| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/en_US.png
+   :target: https://www.facebook.com/groups/openerp.italia/
+.. |it| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/it_IT.png
+   :target: https://www.facebook.com/groups/openerp.italia/
+.. |check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/check.png
+.. |no_check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/no_check.png
+.. |menu| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/menu.png
+.. |right_do| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/right_do.png
+.. |exclamation| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/exclamation.png
+.. |warning| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/warning.png
+.. |xml_schema| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/iso/icons/xml-schema.png
+   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/iso/scope/xml-schema.md
+.. |DesktopTelematico| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/DesktopTelematico.png
+   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
+.. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
+   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
+   
 

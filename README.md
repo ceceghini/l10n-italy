@@ -33,12 +33,12 @@ addon | version | summary
 [l10n_it_ddt](l10n_it_ddt/) | 10.0.1.5.1 | Documento di Trasporto
 [l10n_it_esigibilita_iva](l10n_it_esigibilita_iva/) | 10.0.1.0.0 | Esigibilità IVA
 [l10n_it_fiscal](l10n_it_fiscal/) | 10.0.0.2.0 | Italy - Fiscal localization by zeroincombenze(R)
+[l10n_it_fiscal_ipa](l10n_it_fiscal_ipa/) | 10.0.1.1.0 | IPA Code and Destination Code in Partner Record
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 10.0.1.0.0 | Electronic invoices payment
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 10.0.1.0.2 | Italian Localisation - Fiscal Code
 [l10n_it_fiscalcode_invoice](l10n_it_fiscalcode_invoice/) | 10.0.1.0.0 | Italian Fiscal Code in invoice PDF
-[l10n_it_ipa](l10n_it_ipa/) | 10.0.1.0.0 | IPA Code (IndicePA)
 [l10n_it_pec](l10n_it_pec/) | 10.0.1.0.0 | Pec Mail
-[l10n_it_rea](l10n_it_rea/) | 10.0.1.0.0 | Manage fields for Economic Administrative catalogue
+[l10n_it_rea](l10n_it_rea/) | 10.0.1.0.1 | Manage fields for Economic Administrative catalogue
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 10.0.1.1.1 | Reverse Charge for Italy
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 10.0.1.1.0 | Ricevute Bancarie
 [l10n_it_split_payment](l10n_it_split_payment/) | 10.0.1.0.2 | Split Payment
@@ -60,8 +60,8 @@ addon | version | summary
 [l10n_it_CEE_balance_generic](l10n_it_CEE_balance_generic/) | 0.1 (unported) | Italy - 4th EU Directive - Consolidation Chart of Accounts
 [l10n_it_base_crm](l10n_it_base_crm/) | 0.1 (unported) | Italian Localisation - CRM
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 0.1 (unported) | Italian Localisation - Bill of Entry
-[l10n_it_fatturapa](l10n_it_fatturapa/) | 10.0.2.0.1 (unported) | Electronic invoices
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 10.0.1.0.0 (unported) | Electronic invoices emission
+[l10n_it_einvoice_base](l10n_it_einvoice_base/) | 10.0.2.0.1 (unported) | Electronic invoices
+[l10n_it_einvoice_out](l10n_it_einvoice_out/) | 10.0.1.0.0 (unported) | Electronic invoices emission
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 10.0.0.1.0 (unported) | Italian Localization - Tipi di documento fiscali per dichiarativi
 [l10n_it_partially_deductible_vat](l10n_it_partially_deductible_vat/) | 0.1 (unported) | Italy - Partially Deductible VAT
 [l10n_it_prima_nota_cassa](l10n_it_prima_nota_cassa/) | 0.1 (unported) | Italian Localisation - Prima Nota Cassa
