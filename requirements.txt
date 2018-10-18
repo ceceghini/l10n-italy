@@ -1,0 +1,17 @@
+# BeautifulSoup
+lxml
+mako
+mygengo
+psycopg2-binary
+python-dateutil
+python-docutils
+# python-ldap
+python-openid
+pytz
+# raven
+# raven_sanitize_openerp
+reportlab
+# requests
+# unidecode
+# xlwt
+Werkzeug
