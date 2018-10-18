@@ -31,3 +31,13 @@ install/win32/meta.py
 /man/
 /share/
 /src/
+OCB/
+account_central_journal/
+account_fiscal_year_closing/
+account_invoice_entry_date/
+account_invoice_sequential_dates/
+account_vat_period_end_statement/
+stdout.log
+*.oca
+*.z0i
+.gitrepname

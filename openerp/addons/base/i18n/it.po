@@ -82,12 +82,12 @@ msgstr "Nessun gap"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Hungarian / Magyar"
-msgstr "Hungarian / Magyar"
+msgstr "Ungherese / Magyar"
 
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (PY) / Español (PY)"
-msgstr "Spanish (PY) / Español (PY)"
+msgstr "Spagnolo (PY) / Español (PY)"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_project_management
@@ -149,7 +149,7 @@ msgstr "\nAggiunge lo username Google a res.user.\n=============================
 #. module: base
 #: help:res.partner,employee:0
 msgid "Check this box if this contact is an Employee."
-msgstr "Seleziona questo box se il contatto è un Dipendente."
+msgstr "Seleziona questa casella se il contatto è un Dipendente."
 
 #. module: base
 #: help:ir.model.fields,domain:0
@@ -435,7 +435,7 @@ msgstr "%(bank_name)s: %(acc_number)s"
 #. module: base
 #: view:ir.actions.todo:0
 msgid "Config Wizard Steps"
-msgstr "Passaggi wizard di configurazione"
+msgstr "Passaggi Procedura guidata di configurazione"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_ui_view_sc
@@ -504,7 +504,7 @@ msgstr "OpenOffice Report Designer"
 #. module: base
 #: model:res.country,name:base.an
 msgid "Netherlands Antilles"
-msgstr "Antille olandesi"
+msgstr "Antille Olandesi"
 
 #. module: base
 #: code:addons/base/res/res_users.py:342
@@ -583,7 +583,7 @@ msgstr "Angola"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (VE) / Español (VE)"
-msgstr "Spanish (VE) / Español (VE)"
+msgstr "Spagnolo (VE) / Español (VE)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_timesheet_invoice
@@ -672,7 +672,7 @@ msgstr "Selezionare Finestra Azione, Report e Wizard da eseguire"
 #. module: base
 #: sql_constraint:ir.config_parameter:0
 msgid "Key must be unique."
-msgstr "La chiave deve essere unica."
+msgstr "La Chiave deve essere unica."
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_plugin_outlook
@@ -819,7 +819,7 @@ msgstr "Calendario Web"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Swedish / svenska"
-msgstr "Swedish / svenska"
+msgstr "Svedese / svenska"
 
 #. module: base
 #: field:base.language.export,name:0 field:ir.attachment,datas_fname:0
@@ -917,7 +917,7 @@ msgstr "'%s' non sembra essere una data valida per il campo '%%(field)s'"
 #. module: base
 #: view:res.partner:0
 msgid "My Partners"
-msgstr "Miei Partners"
+msgstr "Miei Partner"
 
 #. module: base
 #: model:res.country,name:base.zw
@@ -933,7 +933,7 @@ msgstr "Tipo di vincolo: `f` per una chiave esterna, `u` per altri vincoli."
 #. module: base
 #: view:ir.actions.report.xml:0
 msgid "XML Report"
-msgstr "XML Report"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.es
@@ -960,7 +960,7 @@ msgstr "CAP"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (UY) / Español (UY)"
-msgstr "Spanish (UY) / Español (UY)"
+msgstr "Spagnolo (UY) / Español (UY)"
 
 #. module: base
 #: field:res.partner,mobile:0
@@ -1007,7 +1007,7 @@ msgstr "Altre licenze OSI approvate"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_gantt
 msgid "Web Gantt"
-msgstr "Gantt Web"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,name:base.act_menu_create
@@ -1034,7 +1034,7 @@ msgstr "Utenti Google"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_fleet
 msgid "Fleet Management"
-msgstr "Gestione Flotte"
+msgstr "Gestione Flotta"
 
 #. module: base
 #: help:ir.server.object.lines,value:0
@@ -1086,7 +1086,7 @@ msgstr "\nIl modulo generico di OpenERP per il Customer Relationship Management\
 #. module: base
 #: selection:base.language.export,format:0
 msgid "TGZ Archive"
-msgstr "File TGZ"
+msgstr "Archivio TGZ"
 
 #. module: base
 #: view:res.groups:0
@@ -1232,7 +1232,7 @@ msgstr "Kontni načrt za gospodarske družbe"
 #: code:addons/orm.py:5044
 #, python-format
 msgid "Record #%d of %s not found, cannot copy!"
-msgstr "Il record #%d di %s non è stato trovato, impossibile copiare!"
+msgstr "Record #%d di %s non trovato, non è possibile la copia!"
 
 #. module: base
 #: field:ir.module.module,contributors:0
@@ -1297,7 +1297,7 @@ msgstr "Procedura guidata Campo"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (GT) / Español (GT)"
-msgstr "Spanish (GT) / Español (GT)"
+msgstr "Spagnolo (GT) / Español (GT)"
 
 #. module: base
 #: field:ir.mail_server,smtp_port:0
@@ -1328,7 +1328,7 @@ msgstr "%W - Numero settimana dell'anno (Lunedì come primo giorno della settima
 #: code:addons/base/module/wizard/base_language_install.py:53
 #, python-format
 msgid "Language Pack"
-msgstr "Language Pack"
+msgstr "Pack Lingua"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_tests
@@ -1719,7 +1719,7 @@ msgstr "Informazioni procedura guidata"
 #: model:ir.actions.act_window,name:base.action_wizard_lang_export
 #: model:ir.ui.menu,name:base.menu_wizard_lang_export
 msgid "Export Translation"
-msgstr "Esporta traduzione"
+msgstr "Esporta Traduzione"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_server_action
@@ -1730,7 +1730,7 @@ msgstr "Azioni Server"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lu
 msgid "Luxembourg - Accounting"
-msgstr "Contabilità - Lussemburgo"
+msgstr "Lussemburgo - Contabilità"
 
 #. module: base
 #: model:res.country,name:base.tp
@@ -1810,7 +1810,7 @@ msgstr "Evento portale"
 #. module: base
 #: selection:ir.translation,state:0
 msgid "Translation in Progress"
-msgstr "Traduzione in cordo"
+msgstr "Traduzione in corso"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_rule
@@ -2082,7 +2082,7 @@ msgstr "Spagnolo / Español"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Korean (KP) / 한국어 (KP)"
-msgstr "Korean (KP) / 한국어 (KP)"
+msgstr "Coreano (KP) / 한국어 (KP)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_vn
@@ -2092,7 +2092,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.ax
 msgid "Åland Islands"
-msgstr "Åland Islands"
+msgstr "Isole Åland"
 
 #. module: base
 #: field:res.company,logo:0
@@ -2234,7 +2234,7 @@ msgstr "Gruppi"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (CL) / Español (CL)"
-msgstr "Spanish (CL) / Español (CL)"
+msgstr "Spagnolo (CL) / Español (CL)"
 
 #. module: base
 #: model:res.country,name:base.bz
@@ -2302,7 +2302,7 @@ msgstr "Lista delle modalità di visualizzazione consentite separate da virgola 
 #: code:addons/orm.py:3935
 #, python-format
 msgid "A document was modified since you last viewed it (%s:%d)"
-msgstr "Un documento è stato modificato dall'ultima volta che è stato visualizzato (%s:%d)"
+msgstr "Un documento è stato modificato dall'ultima tua visualizzazione (%s:%d)"
 
 #. module: base
 #: view:workflow:0
@@ -2313,7 +2313,7 @@ msgstr "Editor del flusso di lavoro"
 #: selection:ir.module.module,state:0
 #: selection:ir.module.module.dependency,state:0
 msgid "To be removed"
-msgstr "Da Rimuovere"
+msgstr "Da rimuovere"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_sequence
@@ -2362,7 +2362,7 @@ msgstr "Il collegamento per questo menù esiste già!"
 #. module: base
 #: view:ir.rule:0
 msgid "Groups (no group = global)"
-msgstr "Gruppi (no group = global)"
+msgstr "Gruppi (nessun gruppo = globale)"
 
 #. module: base
 #: view:ir.module.module:0
@@ -2372,7 +2372,7 @@ msgstr "Extra"
 #. module: base
 #: model:res.country,name:base.st
 msgid "Saint Tome (Sao Tome) and Principe"
-msgstr "São Tomé e Príncipe"
+msgstr "Sao Tome e Principe"
 
 #. module: base
 #: selection:res.partner,type:0
@@ -2537,7 +2537,7 @@ msgstr "Panoramica modello"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_margin
 msgid "Margins by Products"
-msgstr "Margini per prodotti"
+msgstr "Margini per Prodotti"
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_invoiced
@@ -2696,7 +2696,7 @@ msgstr "Mappatura Campi"
 #. module: base
 #: view:base.language.export:0
 msgid "Export Translations"
-msgstr "Esporta traduzioni"
+msgstr "Esporta Traduzioni"
 
 #. module: base
 #: model:ir.module.module,description:base.module_auth_crypt
@@ -2722,7 +2722,7 @@ msgstr "Manager"
 #: code:addons/base/ir/ir_model.py:742
 #, python-format
 msgid "Sorry, you are not allowed to access this document."
-msgstr "Spiacente, non avete i diritti di accesso a questo documento."
+msgstr "Spiacente, non sei autorizzato ad accedere a questo documento."
 
 #. module: base
 #: model:res.country,name:base.py
@@ -2805,7 +2805,7 @@ msgstr "Ereditato"
 #: code:addons/base/ir/ir_fields.py:148
 #, python-format
 msgid "yes"
-msgstr "sì"
+msgstr "si"
 
 #. module: base
 #: field:ir.model.fields,serialization_field_id:0
@@ -2896,7 +2896,7 @@ msgstr "Integrazione con LinkedIn"
 #: code:addons/orm.py:2049 code:addons/orm.py:2060
 #, python-format
 msgid "Invalid Object Architecture!"
-msgstr "Architettura oggetto non valida!"
+msgstr "Architettura dell'Oggetto non valida!"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:387 code:addons/base/ir/ir_model.py:389
@@ -2965,7 +2965,7 @@ msgstr "Isola di Norfolk"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Korean (KR) / 한국어 (KR)"
-msgstr "Korean (KR) / 한국어 (KR)"
+msgstr "Coreano (KR) / 한국어 (KR)"
 
 #. module: base
 #: help:ir.model.fields,model:0
@@ -3138,7 +3138,7 @@ msgstr ""
 #: code:addons/orm.py:3963
 #, python-format
 msgid "Missing document(s)"
-msgstr "Documento(i) mancante"
+msgstr "Documento(i) mancanti"
 
 #. module: base
 #: model:ir.model,name:base.model_res_partner_bank_type
@@ -3201,7 +3201,7 @@ msgstr "Knowledge"
 #. module: base
 #: field:workflow.activity,signal_send:0
 msgid "Signal (subflow.*)"
-msgstr "Signal (subflow.*)"
+msgstr "Segnale (sottoflusso.*)"
 
 #. module: base
 #: code:addons/orm.py:4789
@@ -3281,7 +3281,7 @@ msgstr "Moduli coinvolti"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_contract
 msgid "Employee Contracts"
-msgstr "Contratti impiegato"
+msgstr "Contratti Dipendente"
 
 #. module: base
 #: view:ir.actions.server:0
@@ -3326,7 +3326,7 @@ msgstr "Sondaggio"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (DO) / Español (DO)"
-msgstr "Spanish (DO) / Español (DO)"
+msgstr "Spagnolo (DO) / Español (DO)"
 
 #. module: base
 #: model:ir.model,name:base.model_workflow_activity
@@ -3363,7 +3363,7 @@ msgstr "Finnish / Suomi"
 #. module: base
 #: view:ir.config_parameter:0
 msgid "System Properties"
-msgstr "Proprietà di sistema"
+msgstr "Proprietà di Sistema"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event
@@ -3378,7 +3378,7 @@ msgstr "Prefisso"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "German / Deutsch"
-msgstr "German / Deutsch"
+msgstr "Tedesco / Deutsch"
 
 #. module: base
 #: view:ir.actions.server:0
@@ -3389,7 +3389,7 @@ msgstr "Mappatura Campi"
 #: code:addons/base/module/wizard/base_module_upgrade.py:98
 #, python-format
 msgid "Unmet Dependency!"
-msgstr ""
+Dipendenza non Soddisfatta!mDipendenza non Soddisfatta!sDipendenza non Soddisfatta!gDipendenza non Soddisfatta!sDipendenza non Soddisfatta!tDipendenza non Soddisfatta!rDipendenza non Soddisfatta! Dipendenza non Soddisfatta!"Dipendenza non Soddisfatta!"Dipendenza non Soddisfatta!
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_sir
@@ -3500,7 +3500,7 @@ msgstr "Persone"
 #. module: base
 #: view:base.language.import:0
 msgid "_Import"
-msgstr "_Importa"
+msgstr ""
 
 #. module: base
 #: field:res.users,action_id:0
@@ -3597,24 +3597,24 @@ msgstr "Qualifica"
 #. module: base
 #: help:ir.property,res_id:0
 msgid "If not set, acts as a default value for new resources"
-msgstr "Se non impostato, sarà usato come valore di default per le nuove risorse"
+msgstr "Se non impostato, sarà usato come valore predefinito per le nuove risorse"
 
 #. module: base
 #: code:addons/orm.py:4343
 #, python-format
 msgid "Recursivity Detected."
-msgstr "Ricorsività scoperta."
+msgstr "Rilevata Ricorsività."
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_et
 msgid "Ethiopia - Accounting"
-msgstr "Ethiopia - Accounting"
+msgstr "Etiopia - Contabilità"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.ir_config_list_action
 #: view:ir.config_parameter:0 model:ir.ui.menu,name:base.ir_config_menu
 msgid "System Parameters"
-msgstr "Parametri di sistema"
+msgstr "Parametri di Sistema"
 
 #. module: base
 #: code:addons/base/module/module.py:368
@@ -3728,12 +3728,12 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.pm
 msgid "Saint Pierre and Miquelon"
-msgstr "Saint Pierre e Miquelon"
+msgstr ""
 
 #. module: base
 #: view:ir.actions.todo:0
 msgid "Search Actions"
-msgstr "Azioni di ricerca"
+msgstr "Azioni di Ricerca"
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_calendar
@@ -3809,7 +3809,7 @@ msgstr "Formato Carta"
 #. module: base
 #: model:res.country,name:base.sk
 msgid "Slovakia"
-msgstr "Slovakia"
+msgstr "Slovacchia"
 
 #. module: base
 #: model:res.country,name:base.nr
@@ -3992,7 +3992,7 @@ msgstr "Condividi qualsiasi documento"
 #. module: base
 #: field:workflow.transition,group_id:0
 msgid "Group Required"
-msgstr "Gruppo richiesto"
+msgstr "Gruppo Richiesto"
 
 #. module: base
 #: view:res.lang:0
@@ -4045,7 +4045,7 @@ msgstr "Lingue"
 #: selection:workflow.activity,join_mode:0
 #: selection:workflow.activity,split_mode:0
 msgid "Xor"
-msgstr "Xor"
+msgstr ""
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_localization_account_charts
@@ -4099,12 +4099,12 @@ msgstr ""
 #. module: base
 #: model:ir.model,name:base.model_res_config
 msgid "res.config"
-msgstr "res.config"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pl
 msgid "Poland - Accounting"
-msgstr "Contabilità - Polonia"
+msgstr "Polonia - Contabilità"
 
 #. module: base
 #: view:ir.cron:0
@@ -4334,7 +4334,7 @@ msgstr "Carica una traduzione"
 #. module: base
 #: field:ir.module.module,latest_version:0
 msgid "Installed Version"
-msgstr "Versione installata"
+msgstr "Versione Installata"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_test
@@ -4428,7 +4428,7 @@ msgstr "Vista"
 #: code:addons/base/ir/ir_fields.py:148
 #, python-format
 msgid "no"
-msgstr "no"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_crm_partner_assign
@@ -4495,12 +4495,12 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.ps
 msgid "Palestinian Territory, Occupied"
-msgstr "Territori Palestinesi Occupati"
+msgstr "Palestina, Territorio Occupato"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ch
 msgid "Switzerland - Accounting"
-msgstr "Contabilità - Svizzera"
+msgstr "Svizzera - Contabilità"
 
 #. module: base
 #: field:res.bank,zip:0 field:res.company,zip:0 field:res.partner,zip:0
@@ -4579,7 +4579,7 @@ msgstr ""
 #: model:ir.ui.menu,name:base.menu_action_ui_view view:ir.ui.view:0
 #: view:res.groups:0 field:res.groups,view_access:0
 msgid "Views"
-msgstr "Visualizzazioni"
+msgstr "Viste"
 
 #. module: base
 #: view:res.groups:0 field:res.groups,rule_groups:0
@@ -4595,7 +4595,7 @@ msgstr "Server SMTP"
 #: code:addons/base/module/module.py:322
 #, python-format
 msgid "You try to remove a module that is installed or will be installed"
-msgstr "Stai provando a rimuovere un modulo che è installato o che verrà installato."
+msgstr "Stai provando a rimuovere un modulo che è installato o sarà installato"
 
 #. module: base
 #: view:base.module.upgrade:0
@@ -4654,12 +4654,12 @@ msgstr "Usabilità"
 #. module: base
 #: model:ir.ui.menu,name:base.next_id_73
 msgid "Purchase"
-msgstr "Acquisti"
+msgstr "Acquisto"
 
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Portuguese (BR) / Português (BR)"
-msgstr "Portuguese (BR) / Português (BR)"
+msgstr "Portoghese (BR) / Português (BR)"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_needaction_mixin
@@ -4669,7 +4669,7 @@ msgstr "ir.needaction_mixin"
 #. module: base
 #: view:base.language.export:0
 msgid "This file was generated using the universal"
-msgstr "Questo file è stato generato utilizzato l'universale"
+msgstr "Questo file è stato generato utilizzando il formato universale di codifica"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_7
@@ -4738,7 +4738,7 @@ msgstr "Salta"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event_sale
 msgid "Events Sales"
-msgstr "Eventi vendite"
+msgstr "Vendite Eventi"
 
 #. module: base
 #: model:res.country,name:base.ls
@@ -4758,7 +4758,7 @@ msgstr "Geo-Localizzazione dei Partners"
 #. module: base
 #: model:res.country,name:base.ke
 msgid "Kenya"
-msgstr "Kenia"
+msgstr "Kenya"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_translation
@@ -4936,7 +4936,7 @@ msgstr "Installato"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Ukrainian / українська"
-msgstr "Ukrainian / українська"
+msgstr "Ucraino / українська"
 
 #. module: base
 #: model:res.country,name:base.sn
@@ -4982,7 +4982,7 @@ msgstr "Affero GPL-3"
 #. module: base
 #: field:ir.sequence,number_next:0 field:ir.sequence,number_next_actual:0
 msgid "Next Number"
-msgstr "Numero Successivo"
+msgstr "Prossimo Numero"
 
 #. module: base
 #: help:workflow.transition,condition:0
@@ -4992,7 +4992,7 @@ msgstr "Espressione da soddisfare se si vuole completare la transazione."
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (PA) / Español (PA)"
-msgstr "Spanish (PA) / Español (PA)"
+msgstr "Spagnolo (PA) / Español (PA)"
 
 #. module: base
 #: view:res.currency:0 field:res.currency,rate_ids:0
@@ -5017,7 +5017,7 @@ msgstr "======================================================"
 #. module: base
 #: sql_constraint:ir.model:0
 msgid "Each model must be unique!"
-msgstr "Ogni modello deve essere unico!"
+msgstr "Ogni modello deve essere univoco!"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_localization
@@ -5234,7 +5234,7 @@ msgstr "Zambia"
 #. module: base
 #: view:ir.actions.todo:0
 msgid "Launch Configuration Wizard"
-msgstr "Avvia wizard di configurazione"
+msgstr "Avvia Procedura guidata di configurazione"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp
@@ -5259,7 +5259,7 @@ msgstr "Visualizza tutte le lead"
 #. module: base
 #: model:res.country,name:base.ci
 msgid "Ivory Coast (Cote D'Ivoire)"
-msgstr "Costa d'Avorio"
+msgstr "Costa D'Avorio (Cote D'Ivoire)"
 
 #. module: base
 #: model:res.country,name:base.kz
@@ -5352,12 +5352,12 @@ msgstr "Inglese (Regno Unito)"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Japanese / 日本語"
-msgstr "Japanese / 日本語"
+msgstr "Giapponese / 日本語"
 
 #. module: base
 #: model:ir.model,name:base.model_base_language_import
 msgid "Language Import"
-msgstr "Importa lingua"
+msgstr "Importa Lingua"
 
 #. module: base
 #: help:workflow.transition,act_from:0
@@ -5503,7 +5503,7 @@ msgstr "vero"
 #. module: base
 #: model:ir.model,name:base.model_base_language_install
 msgid "Install Language"
-msgstr "Installa lingua"
+msgstr "Installa Lingua"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_11
@@ -5513,7 +5513,7 @@ msgstr "Servizi"
 #. module: base
 #: view:ir.translation:0
 msgid "Translation"
-msgstr "Traslazione"
+msgstr "Traduzione"
 
 #. module: base
 #: selection:res.request,state:0
@@ -5628,7 +5628,7 @@ msgstr ""
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (BO) / Español (BO)"
-msgstr "Spanish (BO) / Español (BO)"
+msgstr "Spagnolo (BO) / Español (BO)"
 
 #. module: base
 #: model:ir.module.module,description:base.module_board
@@ -5737,7 +5737,7 @@ msgstr "Telefono:"
 #. module: base
 #: field:res.partner,is_company:0
 msgid "Is a Company"
-msgstr "E' una azienda"
+msgstr "È un'Azienda"
 
 #. module: base
 #: view:res.company:0 view:res.partner:0 view:res.users:0
@@ -5752,7 +5752,7 @@ msgstr "Ore"
 #. module: base
 #: model:res.country,name:base.gp
 msgid "Guadeloupe (French)"
-msgstr "Guadalupa (Francia)"
+msgstr "Guadalupa (Francese)"
 
 #. module: base
 #: code:addons/base/res/res_lang.py:185 code:addons/base/res/res_lang.py:187
@@ -5828,7 +5828,7 @@ msgstr "Cartella"
 #. module: base
 #: field:wizard.ir.model.menu.create,name:0
 msgid "Menu Name"
-msgstr "Nome Menu"
+msgstr "Nome del Menu"
 
 #. module: base
 #: field:ir.values,key2:0
@@ -5941,7 +5941,7 @@ msgstr "Annulla registrazioni sezionale"
 #. module: base
 #: field:res.partner,tz_offset:0
 msgid "Timezone offset"
-msgstr "Offset Timezone"
+msgstr "Offset fuso orario"
 
 #. module: base
 #: model:ir.module.module,description:base.module_marketing_campaign
@@ -6016,7 +6016,7 @@ msgstr "Capo Verde"
 #. module: base
 #: model:res.groups,comment:base.group_sale_salesman
 msgid "the user will have access to his own data in the sales application."
-msgstr "l'utente avrà accesso ai propri dati nel modulo vendite."
+msgstr "l'utente avrà accesso solo ai propri dati nel modulo vendite."
 
 #. module: base
 #: code:addons/orm.py:1393
@@ -6050,12 +6050,12 @@ msgstr "Approssimazione del prezzo"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Latvian / latviešu valoda"
-msgstr "Latvian / latviešu valoda"
+msgstr "Lettone / latviešu valoda"
 
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "French / Français"
-msgstr "French / Français"
+msgstr "Francese / Français"
 
 #. module: base
 #: view:ir.module.module:0
@@ -6268,14 +6268,14 @@ msgstr "Menu"
 #. module: base
 #: selection:ir.actions.todo,type:0
 msgid "Launch Manually Once"
-msgstr "Esegui manualmente una volta sola"
+msgstr "Esegui Manualmente Una Volta"
 
 #. module: base
 #: view:workflow:0 view:workflow.activity:0 field:workflow.activity,wkf_id:0
 #: field:workflow.instance,wkf_id:0 field:workflow.transition,wkf_id:0
 #: field:workflow.workitem,wkf_id:0
 msgid "Workflow"
-msgstr "Workflow"
+msgstr ""
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -6301,12 +6301,12 @@ msgstr ""
 #. module: base
 #: help:res.bank,bic:0
 msgid "Sometimes called BIC or Swift."
-msgstr "A volte chiamato BIC o Swift"
+msgstr "Talvolta chiamato BIC o Swift."
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in
 msgid "Indian - Accounting"
-msgstr ""
+India - ContabilitàmIndia - ContabilitàsIndia - ContabilitàgIndia - ContabilitàsIndia - ContabilitàtIndia - ContabilitàrIndia - Contabilità India - Contabilità"India - Contabilità"India - Contabilità
 
 #. module: base
 #: field:ir.translation,src:0
@@ -6316,7 +6316,7 @@ msgstr ""
 #. module: base
 #: field:res.lang,time_format:0
 msgid "Time Format"
-msgstr "Formato dell'ora"
+msgstr "Formato Ora"
 
 #. module: base
 #: field:res.company,rml_header3:0
@@ -6377,7 +6377,7 @@ msgstr ""
 #. module: base
 #: view:ir.sequence:0
 msgid "Week of the Year: %(woy)s"
-msgstr "Settimana dell'anno: %(woy)s"
+msgstr "Settimana dell'Anno: %(woy)s"
 
 #. module: base
 #: field:res.users,id:0
@@ -6528,7 +6528,7 @@ msgstr "Importo conseguente"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Lithuanian / Lietuvių kalba"
-msgstr "Lithuanian / Lietuvių kalba"
+msgstr "Lituano / Lietuvių kalba"
 
 #. module: base
 #: help:ir.actions.server,record_id:0
@@ -6597,7 +6597,7 @@ msgstr "File del modulo importato con successo!"
 #: view:ir.model.constraint:0
 #: model:ir.ui.menu,name:base.ir_model_constraint_menu
 msgid "Model Constraints"
-msgstr "Vincoli model"
+msgstr "Vincoli del Modello"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_workflow_transition_form
@@ -6620,7 +6620,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.lc
 msgid "Saint Lucia"
-msgstr "Saint Lucia"
+msgstr ""
 
 #. module: base
 #: help:res.users,new_password:0
@@ -6651,7 +6651,7 @@ msgstr "Dott."
 #: model:res.groups,name:base.group_user field:res.partner,employee:0
 #: model:res.partner.category,name:base.res_partner_category_3
 msgid "Employee"
-msgstr "Impiegato"
+msgstr "Dipendente"
 
 #. module: base
 #: model:ir.module.module,description:base.module_project_issue
@@ -6738,7 +6738,7 @@ msgstr "Codice Stato"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_multilang
 msgid "Multi Language Chart of Accounts"
-msgstr "Piano dei conti multi lingua"
+msgstr "Piano dei Conti Multilingua"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_gt
@@ -6766,7 +6766,7 @@ msgstr "Traducibile"
 #. module: base
 #: help:base.language.import,code:0
 msgid "ISO Language and Country code, e.g. en_US"
-msgstr "Codici lingua e paese ISO, es: en_US"
+msgstr "Codice ISO di lingua e Nazione, es. it_IT"
 
 #. module: base
 #: model:res.country,name:base.vn
@@ -7068,12 +7068,12 @@ msgstr "Chiudi"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (MX) / Español (MX)"
-msgstr "Spanish (MX) / Español (MX)"
+msgstr "Spagnolo (MX) / Español (MX)"
 
 #. module: base
 #: view:ir.actions.todo:0
 msgid "Wizards to be Launched"
-msgstr "Wizard da lanciare"
+msgstr "Procedura guidata da lanciare"
 
 #. module: base
 #: model:res.country,name:base.bt
@@ -7092,7 +7092,7 @@ msgstr ""
 #. module: base
 #: help:ir.sequence,number_next:0
 msgid "Next number of this sequence"
-msgstr "Numero successivo di questa sequenza"
+msgstr "Prossimo Numero di questa sequenza"
 
 #. module: base
 #: view:res.partner:0 view:res.users:0
@@ -7161,7 +7161,7 @@ msgstr "Se state lavorando per il mercato americano, è possibile gestire i diff
 #. module: base
 #: view:workflow.workitem:0
 msgid "Workflow Workitems"
-msgstr "Oggetti di Lavoro del Worlflow"
+msgstr "Oggetti di Lavoro del Workflow"
 
 #. module: base
 #: model:res.country,name:base.vc
@@ -7201,7 +7201,7 @@ msgstr "Campi"
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_employee_form
 msgid "Employees"
-msgstr "Impiegati"
+msgstr "Dipendenti"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_shortcuts
@@ -7263,7 +7263,7 @@ msgstr "Chinese (CN) / 简体中文"
 #. module: base
 #: field:ir.model.fields,selection:0
 msgid "Selection Options"
-msgstr "Opzioni selezione"
+msgstr "Opzioni di Selezione"
 
 #. module: base
 #: field:res.bank,street:0 field:res.company,street:0
@@ -7329,7 +7329,7 @@ msgstr ""
 #. module: base
 #: field:res.currency,rounding:0
 msgid "Rounding Factor"
-msgstr "Fattore di arrotondamento"
+msgstr "Fattore di Arrotondamento"
 
 #. module: base
 #: model:res.country,name:base.ca
@@ -7409,7 +7409,7 @@ msgstr "Isole Cocos e Keeling"
 #: selection:base.language.install,state:0
 #: selection:base.module.import,state:0 selection:base.module.update,state:0
 msgid "init"
-msgstr "init"
+msgstr ""
 
 #. module: base
 #: view:res.partner:0 field:res.partner,user_id:0
@@ -7419,7 +7419,7 @@ msgstr "Commerciale"
 #. module: base
 #: view:res.lang:0
 msgid "11. %U or %W       ==> 48 (49th week)"
-msgstr "11. %U or %W ==> 48 (49th week)"
+msgstr ""
 
 #. module: base
 #: model:ir.model,name:base.model_res_partner_bank_type_field
@@ -7445,7 +7445,7 @@ msgstr "Dutch / Nederlands"
 #. module: base
 #: selection:res.company,paper_format:0
 msgid "US Letter"
-msgstr "US Letter"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_partner_customer_form
@@ -7474,13 +7474,13 @@ msgstr "Non è permesso impostare password vuote per motivi di sicurezza!"
 #. module: base
 #: help:ir.mail_server,smtp_pass:0
 msgid "Optional password for SMTP authentication"
-msgstr "Password opzionale per l'autenticazione SMTP"
+msgstr "Password opzionale per autenticazione SMTP"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:743
 #, python-format
 msgid "Sorry, you are not allowed to modify this document."
-msgstr "Siamo spiacenti, non è possibile modificare questo documento."
+msgstr "Spiacente, non sei autorizzato a modificare questo documento."
 
 #. module: base
 #: code:addons/base/res/res_config.py:379
@@ -7494,7 +7494,7 @@ msgstr "\n\nIl componente aggiuntivo è già installato nel sistema"
 #. module: base
 #: help:ir.cron,interval_number:0
 msgid "Repeat every x."
-msgstr "Ripeti ogni X."
+msgstr "Ripeti ogni x."
 
 #. module: base
 #: model:res.partner.bank.type,name:base.bank_normal
@@ -7557,7 +7557,7 @@ msgstr "Campo Oggetto"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (PE) / Español (PE)"
-msgstr "Spanish (MX) / Español (MX)"
+msgstr "Spagnolo (PE) / Español (PE)"
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -7739,7 +7739,7 @@ msgstr "Contatto"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_at
 msgid "Austria - Accounting"
-msgstr ""
+Austria - ContabilitàmAustria - ContabilitàsAustria - ContabilitàgAustria - ContabilitàsAustria - ContabilitàtAustria - ContabilitàrAustria - Contabilità Austria - Contabilità"Austria - Contabilità"Austria - Contabilità
 
 #. module: base
 #: model:ir.model,name:base.model_ir_ui_menu
@@ -8018,12 +8018,12 @@ msgstr "Google Analytics"
 #. module: base
 #: model:res.country,name:base.dm
 msgid "Dominica"
-msgstr "Dominica"
+msgstr ""
 
 #. module: base
 #: field:ir.translation,name:0
 msgid "Translated field"
-msgstr "Campo traducibile"
+msgstr "Campi tradotti"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_location
@@ -8192,12 +8192,12 @@ msgstr "%j - Giorno dell'anno [001,366]."
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Slovenian / slovenščina"
-msgstr "Slovenian / slovenščina"
+msgstr "Sloveno / slovenščina"
 
 #. module: base
 #: field:res.currency,position:0
 msgid "Symbol Position"
-msgstr "Posizione simbolo"
+msgstr "Posizione Simbolo"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_de
@@ -8276,7 +8276,7 @@ msgstr "%b - Nome del mese abbreviato"
 #: code:addons/base/ir/ir_model.py:745
 #, python-format
 msgid "Sorry, you are not allowed to delete this document."
-msgstr "Siamo spiacenti, non sei abilitato all'eliminazione di questo documento."
+msgstr "Spiacente, non sei autorizzato a cancellare questo documento."
 
 #. module: base
 #: constraint:ir.rule:0
@@ -8297,7 +8297,7 @@ msgstr "Multi Azioni"
 #. module: base
 #: model:ir.module.module,summary:base.module_mail
 msgid "Discussions, Mailing Lists, News"
-msgstr "Discussioni, mailing list, news"
+msgstr "Comunicazioni, Mailing List, News"
 
 #. module: base
 #: model:ir.module.module,description:base.module_fleet
@@ -8328,7 +8328,7 @@ msgstr "Azienda Predefinita"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (EC) / Español (EC)"
-msgstr "Spanish (EC) / Español (EC)"
+msgstr "Spagnolo (EC) / Español (EC)"
 
 #. module: base
 #: help:ir.ui.view,xml_id:0
@@ -8369,7 +8369,7 @@ msgstr "Tutto sembra correttamente configurato!"
 #. module: base
 #: view:res.request.link:0
 msgid "Request Link"
-msgstr "Collegamento Rochiesta"
+msgstr ""
 
 #. module: base
 #: view:ir.attachment:0 selection:ir.attachment,type:0
@@ -8380,7 +8380,7 @@ msgstr "URL"
 #. module: base
 #: help:res.country,name:0
 msgid "The full name of the country."
-msgstr "Il nome completo della nazione"
+msgstr "Il nome completo della nazione."
 
 #. module: base
 #: selection:ir.actions.server,state:0
@@ -8521,7 +8521,7 @@ msgstr "Magazzino"
 #: model:ir.module.module,shortdesc:base.module_resource
 #: field:ir.property,res_id:0
 msgid "Resource"
-msgstr "Risorse"
+msgstr "Risorsa"
 
 #. module: base
 #: model:ir.module.module,description:base.module_process
@@ -8540,7 +8540,7 @@ msgstr ""
 #. module: base
 #: view:res.lang:0
 msgid "8.  %I:%M:%S %p  ==> 06:25:20 PM"
-msgstr "Copy text   \t 8. %I:%M:%S %p ==> 06:25:20 PM"
+msgstr "8. %I:%M:%S %p ==> 06:25:20 PM"
 
 #. module: base
 #: view:ir.filters:0
@@ -8586,7 +8586,7 @@ msgstr "Sito Web"
 #. module: base
 #: selection:ir.mail_server,smtp_encryption:0
 msgid "None"
-msgstr "Nessuno"
+msgstr "Nulla"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_holidays
@@ -8639,7 +8639,7 @@ msgstr "Flemish (BE) / Vlaams (BE)"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Vietnamese / Tiếng Việt"
-msgstr "Vietnamese / Tiếng Việt"
+msgstr "Vietnamita / Tiếng Việt"
 
 #. module: base
 #: field:ir.cron,interval_number:0
@@ -8674,12 +8674,12 @@ msgstr "Tipo Vista"
 #. module: base
 #: model:ir.ui.menu,name:base.next_id_2
 msgid "User Interface"
-msgstr "Interfaccia utente"
+msgstr "Interfaccia Utente"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_byproduct
 msgid "MRP Byproducts"
-msgstr "Prodotti secondari"
+msgstr "Produzione Prodotti secondari"
 
 #. module: base
 #: field:res.request,ref_partner_id:0
@@ -8777,7 +8777,7 @@ msgstr ""
 #. module: base
 #: selection:ir.actions.todo,type:0
 msgid "Launch Manually"
-msgstr "Esegui manualmente"
+msgstr "Esegui Manualmente"
 
 #. module: base
 #: model:res.country,name:base.be
@@ -8887,7 +8887,7 @@ msgstr ""
 #. module: base
 #: selection:base.language.export,format:0
 msgid "PO File"
-msgstr "File .PO"
+msgstr "File PO"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_diagram
@@ -8901,7 +8901,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.nt
 msgid "Neutral Zone"
-msgstr "Zona neutrale"
+msgstr "Zona Neutrale"
 
 #. module: base
 #: model:ir.module.module,description:base.module_portal_sale
@@ -8967,7 +8967,7 @@ msgstr "Azioni Finestra"
 #: code:addons/base/res/res_config.py:573
 #, python-format
 msgid "Only administrators can change the settings"
-msgstr "Solo un amministratore puo' cambiare le impostazioni"
+msgstr "Solo un amministratore può cambiare le impostazioni"
 
 #. module: base
 #: model:ir.module.module,description:base.module_portal_project_issue
@@ -9216,7 +9216,7 @@ msgstr "Raggruppa per..."
 #. module: base
 #: view:base.module.update:0
 msgid "Module Update Result"
-msgstr "Risultato Aggiornamento Modulo"
+msgstr "Risultato Aggiornamento Moduli"
 
 #. module: base
 #: model:ir.module.module,description:base.module_analytic_contract_hr_expense
@@ -9265,12 +9265,12 @@ msgstr "Base"
 #. module: base
 #: field:ir.model.data,model:0 field:ir.values,model:0
 msgid "Model Name"
-msgstr "Nome Model"
+msgstr "Nome Modello"
 
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Telugu / తెలుగు"
-msgstr "Telugu / తెలుగు"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_partner_supplier_form
@@ -9324,7 +9324,7 @@ msgstr "Codice"
 #. module: base
 #: model:ir.model,name:base.model_res_config_installer
 msgid "res.config.installer"
-msgstr "res.config.installer"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mc
@@ -9344,7 +9344,7 @@ msgstr "Mostra"
 #. module: base
 #: model:res.groups,name:base.group_multi_company
 msgid "Multi Companies"
-msgstr "Multi-azienda"
+msgstr "Multi Aziende"
 
 #. module: base
 #: help:res.users,menu_id:0
@@ -9370,7 +9370,7 @@ msgstr "Codici sequenza"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (CO) / Español (CO)"
-msgstr "Spanish (CO) / Español (CO)"
+msgstr "Spagnolo (CO) / Español (CO)"
 
 #. module: base
 #: view:base.module.configuration:0
@@ -9452,7 +9452,7 @@ msgstr "Sincronizza Termini"
 #. module: base
 #: field:res.lang,thousands_sep:0
 msgid "Thousands Separator"
-msgstr "Separatore delle migliaia"
+msgstr "Separatore Migliaia"
 
 #. module: base
 #: field:res.request,create_date:0
@@ -9545,7 +9545,7 @@ msgstr ""
 #. module: base
 #: field:ir.attachment,datas:0
 msgid "File Content"
-msgstr "Contenuto del file"
+msgstr "Contenuto File"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_model_relation
@@ -9759,7 +9759,7 @@ msgstr ""
 #: model:res.partner.title,name:base.res_partner_title_miss
 #: model:res.partner.title,shortcut:base.res_partner_title_miss
 msgid "Miss"
-msgstr "Sig.rina"
+msgstr "Sig.na"
 
 #. module: base
 #: view:ir.model.access:0 field:ir.model.access,perm_write:0
@@ -9796,7 +9796,7 @@ msgstr "Vede i propri Lead"
 #. module: base
 #: view:ir.actions.todo:0 selection:ir.actions.todo,state:0
 msgid "To Do"
-msgstr "Da fare"
+msgstr "Da Fare"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_portal_hr_employees
@@ -9854,7 +9854,7 @@ msgstr "Indirizzo"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Mongolian / монгол"
-msgstr "Mongolian / монгол"
+msgstr "Mongolo / монгол"
 
 #. module: base
 #: model:res.country,name:base.mr
@@ -9953,7 +9953,7 @@ msgstr "ir.mail_server"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Spanish (CR) / Español (CR)"
-msgstr "Spanish (CR) / Español (CR)"
+msgstr "Spagnolo (CR) / Español (CR)"
 
 #. module: base
 #: view:ir.rule:0
@@ -9967,7 +9967,7 @@ msgstr ""
 #. module: base
 #: field:res.currency.rate,rate:0
 msgid "Rate"
-msgstr "Valore"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.cg
@@ -10008,7 +10008,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.kn
 msgid "Saint Kitts & Nevis Anguilla"
-msgstr "Saint Kitts e Nevis"
+msgstr ""
 
 #. module: base
 #: code:addons/base/res/res_currency.py:207
@@ -10060,7 +10060,7 @@ msgstr "Oggetto nel quale vuoi creare/scrivere l'oggetto. Se vuoto allora si rif
 #: view:ir.module.module:0 selection:ir.module.module,state:0
 #: selection:ir.module.module.dependency,state:0
 msgid "Not Installed"
-msgstr "Non installato"
+msgstr "Non Installato"
 
 #. module: base
 #: view:workflow.activity:0 field:workflow.activity,out_transitions:0
@@ -10128,12 +10128,12 @@ msgstr "Yemen"
 #. module: base
 #: selection:workflow.activity,split_mode:0
 msgid "Or"
-msgstr "Or"
+msgstr "O"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br
 msgid "Brazilian - Accounting"
-msgstr ""
+Brasile - ContabilitàmBrasile - ContabilitàsBrasile - ContabilitàgBrasile - ContabilitàsBrasile - ContabilitàtBrasile - ContabilitàrBrasile - Contabilità Brasile - Contabilità"Brasile - Contabilità"Brasile - Contabilità
 
 #. module: base
 #: model:res.country,name:base.pk
@@ -10276,7 +10276,7 @@ msgstr ""
 #. module: base
 #: selection:ir.module.module,license:0
 msgid "Other Proprietary"
-msgstr "Altro proprietario"
+msgstr "Altro Proprietario"
 
 #. module: base
 #: model:res.country,name:base.ec
@@ -10286,7 +10286,7 @@ msgstr "Ecuador"
 #. module: base
 #: model:ir.model,name:base.model_workflow
 msgid "workflow"
-msgstr "Workflow"
+msgstr "Flusso di lavoro  o quantita' di lavoro"
 
 #. module: base
 #: view:ir.rule:0
@@ -10492,7 +10492,7 @@ msgstr "Indirizzo 2"
 #. module: base
 #: model:ir.actions.act_window,name:base.action_view_base_module_update
 msgid "Module Update"
-msgstr "Aggiornamento modulo"
+msgstr "Aggiornamento Modulo"
 
 #. module: base
 #: code:addons/base/module/wizard/base_module_upgrade.py:99
@@ -10610,7 +10610,7 @@ msgstr "Partner Correlato"
 #: code:addons/osv.py:174 code:addons/osv.py:176
 #, python-format
 msgid "Integrity Error"
-msgstr "Errore di integrità"
+msgstr "Errore d'Integrità"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pa
@@ -10650,7 +10650,7 @@ msgstr ""
 #. module: base
 #: view:res.lang:0
 msgid "Update Terms"
-msgstr "Aggirona i termini"
+msgstr "Aggiorna i termini"
 
 #. module: base
 #: field:res.request,act_to:0 field:res.request.history,act_to:0
@@ -10680,7 +10680,7 @@ msgstr "GPL Versione 3"
 #. module: base
 #: field:base.language.import,name:0
 msgid "Language Name"
-msgstr "Nome lingua"
+msgstr "Nome Lingua"
 
 #. module: base
 #: model:ir.module.module,description:base.module_decimal_precision
@@ -10734,12 +10734,12 @@ msgstr "Valore Contesto"
 #. module: base
 #: view:ir.sequence:0
 msgid "Hour 00->24: %(h24)s"
-msgstr "Formato Orario 00->24: %(h24)s"
+msgstr "Ora 00->24: %(h24)s"
 
 #. module: base
 #: field:ir.cron,nextcall:0
 msgid "Next Execution Date"
-msgstr "Prossima data di esecuzione"
+msgstr "Prossima Data di Esecuzione"
 
 #. module: base
 #: field:ir.sequence,padding:0
@@ -11058,7 +11058,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uk
 msgid "UK - Accounting"
-msgstr ""
+UK - ContabilitàmUK - ContabilitàsUK - ContabilitàgUK - ContabilitàsUK - ContabilitàtUK - ContabilitàrUK - Contabilità UK - Contabilità"UK - Contabilità"UK - Contabilità
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_madam
@@ -11173,12 +11173,12 @@ msgstr "Tipo Report"
 #: view:res.partner:0 field:res.partner,state_id:0 view:res.partner.bank:0
 #: view:res.users:0
 msgid "State"
-msgstr "Stato"
+msgstr "Provincia"
 
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Galician / Galego"
-msgstr "Galician / Galego"
+msgstr "Galiziano / Galego"
 
 #. module: base
 #: model:res.country,name:base.no
@@ -11291,7 +11291,7 @@ msgstr "E' possibile provare a installare il modulo: \"%s\" che dipende dal modu
 #: model:ir.actions.act_window,name:base.action_view_base_import_language
 #: model:ir.ui.menu,name:base.menu_view_base_import_language
 msgid "Import Translation"
-msgstr "Importa traduzione"
+msgstr "Importa Traduzione"
 
 #. module: base
 #: view:ir.module.module:0 field:ir.module.module,category_id:0
@@ -11400,7 +11400,7 @@ msgstr ""
 #. module: base
 #: view:ir.sequence:0
 msgid "Hour 00->12: %(h12)s"
-msgstr "Formato Orario 00->12: %(h12)s"
+msgstr "Ora 00->12: %(h12)s"
 
 #. module: base
 #: model:res.country,name:base.dk
@@ -11449,12 +11449,12 @@ msgstr "Metodo get non definito !"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Norwegian Bokmål / Norsk bokmål"
-msgstr "Norwegian Bokmål / Norsk bokmål"
+msgstr "Norvegese Bokmål / Norsk bokmål"
 
 #. module: base
 #: view:base.module.upgrade:0
 msgid "This module will trigger the uninstallation of below modules."
-msgstr "Questo modulo causerà la rimozione dei seguenti moduli."
+msgstr "Questo modulo causerà la disinstallazione dei seguenti moduli."
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_madam
@@ -11505,7 +11505,7 @@ msgstr "Date su Ordini di Vendita"
 #. module: base
 #: view:ir.attachment:0
 msgid "Creation Month"
-msgstr "Mese di Creazione"
+msgstr "Mese Creazione"
 
 #. module: base
 #: field:ir.module.module,demo:0
@@ -11637,7 +11637,7 @@ msgstr "I wizard di configurazione sono usati per aiutare a configurare una nuov
 #. module: base
 #: field:ir.actions.report.xml,report_sxw:0
 msgid "SXW Path"
-msgstr ""
+Percorso SXWmPercorso SXWsPercorso SXWgPercorso SXWsPercorso SXWtPercorso SXWrPercorso SXW Percorso SXW"Percorso SXW"Percorso SXW
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_asset
@@ -11656,7 +11656,7 @@ msgstr "\nGestione immobilizzazioni finanziaria e contabile.\n==================
 #. module: base
 #: field:ir.cron,numbercall:0
 msgid "Number of Calls"
-msgstr "Numero di chiamate"
+msgstr "Numero di Chiamate"
 
 #. module: base
 #: code:addons/base/res/res_bank.py:192
@@ -11892,7 +11892,7 @@ msgstr "Inventario, Logistica, Stoccaggio"
 #. module: base
 #: view:ir.actions.act_window:0 selection:ir.translation,type:0
 msgid "Help"
-msgstr "Aiuto"
+msgstr "Guida"
 
 #. module: base
 #: view:ir.model:0 view:ir.rule:0 view:res.groups:0
@@ -12016,7 +12016,7 @@ msgstr ""
 #. module: base
 #: field:ir.values,model_id:0
 msgid "Model (change only)"
-msgstr "Modello"
+msgstr "Modello (solo modifica)"
 
 #. module: base
 #: model:ir.module.module,description:base.module_marketing_campaign_crm_demo
@@ -12222,13 +12222,13 @@ msgstr "Iran"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Slovak / Slovenský jazyk"
-msgstr "Slovak / Slovenský jazyk"
+msgstr "Slovacco / Slovenský jazyk"
 
 #. module: base
 #: field:base.language.export,state:0 field:ir.ui.menu,icon_pict:0
 #: field:res.partner,has_image:0 field:res.users,user_email:0
 msgid "unknown"
-msgstr "Sconosciuto"
+msgstr "sconosciuto"
 
 #. module: base
 #: field:res.currency,symbol:0
@@ -12446,7 +12446,7 @@ msgstr "Altro"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Turkish / Türkçe"
-msgstr "Turkish / Türkçe"
+msgstr "Turco / Türkçe"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_workflow_activity_form
@@ -12593,7 +12593,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:base.grant_menu_access
 #: model:ir.ui.menu,name:base.menu_grant_menu_access
 msgid "Menu Items"
-msgstr "Elementi del menu"
+msgstr "Elementi del Menu"
 
 #. module: base
 #: model:res.groups,comment:base.group_sale_salesman_all_leads
@@ -12804,7 +12804,7 @@ msgstr "Partner clienti"
 #. module: base
 #: sql_constraint:res.users:0
 msgid "You can not have two users with the same login !"
-msgstr "Non è possibile inserire due utenti con lo stesso nome di login!"
+msgstr "Non puoi avere due utenti con lo stesso login !"
 
 #. module: base
 #: model:ir.model,name:base.model_multi_company_default
@@ -12948,7 +12948,7 @@ msgstr "Configurazione sistema completata"
 #. module: base
 #: field:ir.attachment,db_datas:0
 msgid "Database Data"
-msgstr ""
+Dati DatabasemDati DatabasesDati DatabasegDati DatabasesDati DatabasetDati DatabaserDati Database Dati Database"Dati Database"Dati Database
 
 #. module: base
 #: model:res.country,name:base.tc
@@ -13030,7 +13030,7 @@ msgstr "Bassa"
 #: code:addons/base/ir/ir_ui_menu.py:379
 #, python-format
 msgid "Error ! You can not create recursive Menu."
-msgstr "Errore! Non è possibile creare un menù ricorsivo."
+msgstr "Errore ! Non puoi creare Menu ricorsivi."
 
 #. module: base
 #: view:ir.translation:0
@@ -13081,7 +13081,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_base_gengo
 msgid "Automated Translations through Gengo API"
-msgstr ""
+Tradotto Automaticamente con Gengo APImTradotto Automaticamente con Gengo APIsTradotto Automaticamente con Gengo APIgTradotto Automaticamente con Gengo APIsTradotto Automaticamente con Gengo APItTradotto Automaticamente con Gengo APIrTradotto Automaticamente con Gengo API Tradotto Automaticamente con Gengo API"Tradotto Automaticamente con Gengo API"Tradotto Automaticamente con Gengo API
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_payment
@@ -13133,7 +13133,7 @@ msgstr "Guernsey"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Romanian / română"
-msgstr "Romanian / română"
+msgstr "Rumeno / română"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mx
@@ -13267,7 +13267,7 @@ msgstr "Scrittura"
 #. module: base
 #: field:ir.ui.menu,parent_left:0
 msgid "Parent Left"
-msgstr "Conto Padre a sinistra"
+msgstr "Genitore Sinistro"
 
 #. module: base
 #: model:ir.module.module,description:base.module_document_page
@@ -13411,7 +13411,7 @@ msgstr ""
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Persian / فارس"
-msgstr "Persian / فارس"
+msgstr "Persiano / فارس"
 
 #. module: base
 #: view:base.language.export:0
@@ -13433,7 +13433,7 @@ msgstr "Giorno della settimana (0:Lunedi): %(weekday)s"
 #: code:addons/base/ir/ir_model.py:1047
 #, python-format
 msgid "Administrator access is required to uninstall a module"
-msgstr "E' richiesto l'accesso come amministratore per disinstallare un modulo"
+msgstr "È richiesto l'accesso come amministratore per disinstallare un modulo"
 
 #. module: base
 #: model:ir.model,name:base.model_base_module_configuration
@@ -13615,7 +13615,7 @@ msgstr "Bulgarian / български език"
 #. module: base
 #: model:ir.ui.menu,name:base.menu_aftersale
 msgid "After-Sale Services"
-msgstr "Servizi post-vendita"
+msgstr "Servizi Post-Vendita"
 
 #. module: base
 #: field:base.language.import,code:0
@@ -13671,7 +13671,7 @@ msgstr "Limite"
 #. module: base
 #: model:res.groups,name:base.group_hr_user
 msgid "Officer"
-msgstr ""
+ResponsabilemResponsabilesResponsabilegResponsabilesResponsabiletResponsabilerResponsabile Responsabile"Responsabile"Responsabile
 
 #. module: base
 #: code:addons/orm.py:803
@@ -13715,7 +13715,7 @@ msgstr ""
 #: code:addons/base/ir/ir_model.py:165
 #, python-format
 msgid "Model '%s' contains module data and cannot be removed!"
-msgstr "Modello %s contiene dei dati e non può essere rimosso!"
+msgstr "Il modello %s contiene dei dati e non può essere rimosso!"
 
 #. module: base
 #: model:res.country,name:base.az
@@ -13730,7 +13730,7 @@ msgstr "Azerbaijan"
 #: code:addons/base/res/res_partner.py:597
 #, python-format
 msgid "Warning"
-msgstr "Avviso"
+msgstr "Attenzione"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_edi
@@ -14159,7 +14159,7 @@ msgstr "Categorie Partner"
 #. module: base
 #: view:base.module.upgrade:0
 msgid "System Update"
-msgstr "Aggiornamento del sistema"
+msgstr "Aggiornamento di Sistema"
 
 #. module: base
 #: field:ir.actions.report.xml,report_sxw_content:0
@@ -14488,12 +14488,12 @@ msgstr "Istanze Workflow"
 #: code:addons/base/res/res_partner.py:747
 #, python-format
 msgid "Partners: "
-msgstr "Partners: "
+msgstr "Partner: "
 
 #. module: base
 #: view:res.partner:0
 msgid "Is a Company?"
-msgstr "E' un'Azienda?"
+msgstr "È un'Azienda?"
 
 #. module: base
 #: code:addons/base/res/res_company.py:173 field:res.partner.bank,name:0
@@ -14540,7 +14540,7 @@ msgstr "Contesto"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_mrp
 msgid "Sales and MRP Management"
-msgstr "Gestione vendite e MRP"
+msgstr "Gestione vendite e produzione"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_partner_form
@@ -14568,7 +14568,7 @@ msgstr "Fattura Picking Direttamente"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Polish / Język polski"
-msgstr "Polish / Język polski"
+msgstr "Polacco / Język polski"
 
 #. module: base
 #: field:ir.exports,name:0
@@ -14613,7 +14613,7 @@ msgstr "Vista di Ricerca"
 #. module: base
 #: selection:base.language.install,lang:0
 msgid "Russian / русский язык"
-msgstr "Russian / русский язык"
+msgstr "Russo / русский язык"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_signup

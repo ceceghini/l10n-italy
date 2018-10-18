@@ -1,116 +1,197 @@
-QUnitSuite is a ``unittest.TestSuite`` able to run QUnit_ test suites
-within the normal unittest process, through PhantomJS_.
+|Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
 
-QUnitSuite is built upon `Ben Alman`_'s work of for the interfacing
-between PhantomJS_ and the host/reporting code: the shims and the
-PhantomJS_ configuration files are those of grunt_'s ``qunit`` task.
+.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/tests/7.0/qunitsuite/static/src/img/icon.png
 
-Why
----
+=================
+|icon| qunitsuite
+=================
 
-You're a Python shop or developer, you have tools and tests built
-around unittest (or compatible with unittests) and your testing
-pipeline is predicated upon that, you're doing web development of some
-sort these days (as so many are) and you'd like to do some testing of
-your web stuff.
+.. contents::
 
-But you don't really want to redo your whole testing stack just for
-that.
 
-QUnitSuite simply grafts QUnit_-based tests, run in PhantomJS_, in
-your existing ``unittest``-based architecture.
+|en|
 
-What
-----
 
-QUnitSuite currently provides a single object as part of its API:
-``qunitsuite.QUnitSuite(testfile[, timeout])``.
 
-This produces a ``unittest.TestSuite`` suitable for all the usual
-stuff (running it, and giving it to an other test suite which will run
-it, that is).
+|it|
 
-``testfile`` is the HTML file bootstrapping your qunit tests, as would
-usually be accessed via a browser. It can be either a local
-(``file:``) url, or an HTTP one. As long as a regular browser can open
-and execute it, PhantomJS_ will manage.
 
-``timeout`` is a check passed to the PhantomJS_ runner: if the runner
-produces no information for longer than ``timeout`` milliseconds, the
-run will be cancelled and a test error will be generated. This
-situation usually means either your ``testfile`` is not a qunit test
-file, qunit is not running or qunit's runner was stopped (for an async
-test) and never restarted.
 
-The default value is very conservative, most tests should run
-correctly with lower timeouts (especially if all tests are
-synchronous).
 
-How
----
 
-``unittest``'s autodiscovery protocol does not directly work with test
-suites (it looks for test cases). If you want autodiscovery to work
-correctly, you will have to use the ``load_tests`` protocol::
 
-    # in a testing module
-    def load_tests(loader, tests, pattern):
-        tests.addTest(QUnitSuite(qunit_test_path.html))
-        return tests
+|en|
 
-outside of that specific case, you can use a ``QUnitSuite`` as a
-standard ``TestSuite`` instance, running it, adding it to an other
-suite or passing it to a ``TestRunner``
 
-Complaints and Grievances
--------------------------
+Installation
+=============
 
-Speed
-~~~~~
+These instruction are just an example to remember what you have to do.
+Installation is based on `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__
+Deployment is ODOO_DIR/REPOSITORY_DIR/MODULE_DIR where:
 
-Starting up a phantomjs instance and running a suite turns out to have
-a rather high overhead, on the order of a second on this machine
-(2.4GHz, 8GB RAM and an SSD).
+| ODOO_DIR is root Odoo directory, i.e. /opt/odoo/7.0
+| REPOSITORY_DIR is downloaded git repository directory, currently is: tests
+| MODULE_DIR is module directory, currently is: qunitsuite
+| MYDB is the database name
+|
 
-As each ``QUnitSuite`` currently creates its own phantomjs instance,
-it's probably a good idea to create bigger suites (put many modules &
-tests in the same QUnit html file, which doesn't preclude splitting
-them across multiple js files).
+::
 
-Hacks
-~~~~~
+    cd $HOME
+    git clone https://github.com/zeroincombenze/tools.git
+    cd ./tools
+    ./install_tools.sh -p
+    export PATH=$HOME/dev:$PATH
+    odoo_install_repository tests -b 7.0 -O oia
 
-QUnitSuite contains a pretty big hack which may or may not cause
-problem depending on your exact setup: in case of case failure or
-error, ``unittest.TestResult`` formats the error traceback provided
-alongside the test object. This goes through Python's
-traceback-formatting code and there are no hooks there.
 
-One could expect to use a custom ``TestResult``, but for test suites
-the ``TestResult`` instance must be provided by the caller, so there
-is no direct hook onto it.
+From UI: go to:
 
-This leaves three options:
+|menu| Setting > Modules > Update Modules List
 
-* Create a custom ``TestResult`` class and require that it be the one
-  provided to the test suite. This requires altered work flows,
-  customization of the test runner and (as far as I know) isn't
-  available through Python 2.7's autodiscovery. It's the cleanest
-  option but completely fails on practicality.
+|menu| Setting > Local Modules |right_do| Select **qunitsuite** > Install
 
-* Create a custom ``TestResult`` which directly alters the original
-  result's ``errors`` and ``failures`` attributes as they're part of
-  the testrunner API. This would work but may put custom results in a
-  strange state and break e.g. unittest2's ``@failfast``.
+|warning| If your Odoo instance crashes, you can do following instruction
+to recover installation status:
 
-* Lastly, monkeypatch the undocumented and implementation detail
-  ``_exc_info_to_string`` on the provided ``result``. This is the
-  route taken, at least for now.
+``run_odoo_debug 7.0 -um qunitsuite -s -d MYDB``
 
-.. _QUnit: http://qunitjs.com/
 
-.. _PhantomJS: http://phantomjs.org/
 
-.. _Ben Alman: http://benalman.com/
 
-.. _grunt: http://gruntjs.com/
+
+
+
+
+Known issues / Roadmap
+=======================
+
+|warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
+paragrafo relativo alle funzionalità e differenze.
+
+
+
+
+
+Issue Tracker
+==============
+
+Bug reports are welcome! You can use the issue tracker to report bugs,
+and/or submit pull requests on `GitHub Issues
+<https://github.com/Odoo-Italia-Associazione/tests/issues>`_.
+
+In case of trouble, please check there if your issue has already been reported.
+
+
+Proposals for enhancement
+--------------------------
+
+If you have a proposal to change this module, you may want to send an email to
+<moderatore@odoo-italia.org> for initial feedback.
+An Enhancement Proposal may be submitted if your idea gains ground.
+
+
+
+
+
+
+Credits
+========
+
+Authors
+--------
+
+* `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+
+Contributors
+-------------
+
+* Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
+Maintainers
+------------
+
+|Odoo Italia Associazione|
+
+This module is maintained by the Odoo Italia Associazione.
+
+To contribute to this module, please visit https://odoo-italia.org/.
+
+
+
+
+----------------
+
+**Odoo** is a trademark of `Odoo S.A. <https://www.odoo.com/>`__
+(formerly OpenERP)
+
+**OCA**, or the `Odoo Community Association <http://odoo-community.org/>`__,
+is a nonprofit organization whose mission is to support
+the collaborative development of Odoo features and promote its widespread use.
+
+**Odoo Italia Associazione**, or the `Associazione Odoo Italia <https://www.odoo-italia.org/>`__
+is the nonprofit Italian Community Association whose mission
+is to support the collaborative development of Odoo designed for Italian law and markeplace.
+Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
+or available only with Odoo Proprietary License.
+Odoo Italia Associazione distributes code under `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
+or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free license.
+
+`Odoo Italia Associazione <https://www.odoo-italia.org/>`__ è un'Associazione senza fine di lucro
+che dal 2017 rilascia moduli per la localizzazione italiana non sviluppati da OCA
+o disponibili solo con `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
+
+Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
+o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
+
+
+
+.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
+    :target: https://odoo-community.org/page/development-status
+    :alt: Alfa
+.. |Build Status| image:: https://travis-ci.org/Odoo-Italia-Associazione/tests.svg?branch=7.0
+    :target: https://travis-ci.org/Odoo-Italia-Associazione/tests
+    :alt: github.com
+.. |license gpl| image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
+    :alt: License: AGPL-3
+.. |Coverage Status| image:: https://coveralls.io/repos/github/Odoo-Italia-Associazione/tests/badge.svg?branch=7.0
+    :target: https://coveralls.io/github/Odoo-Italia-Associazione/tests?branch=7.0
+    :alt: Coverage
+.. |Codecov Status| image:: https://codecov.io/gh/Odoo-Italia-Associazione/tests/branch/7.0/graph/badge.svg
+    :target: https://codecov.io/gh/Odoo-Italia-Associazione/tests/branch/7.0
+    :alt: Codecov
+.. |OCA project| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-7.svg
+    :target: https://github.com/OCA/tests/tree/7.0
+    :alt: OCA
+.. |Tech Doc| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-7.svg
+    :target: http://wiki.zeroincombenze.org/en/Odoo/7.0/dev
+    :alt: Technical Documentation
+.. |Help| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-7.svg
+    :target: http://wiki.zeroincombenze.org/it/Odoo/7.0/man
+    :alt: Technical Documentation
+.. |Try Me| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg
+    :target: https://odoo7.odoo-italia.org
+    :alt: Try Me
+.. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
+   :target: https://odoo-italia.org
+   :alt: Odoo Italia Associazione
+.. |en| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/en_US.png
+   :target: https://www.facebook.com/groups/openerp.italia/
+.. |it| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/it_IT.png
+   :target: https://www.facebook.com/groups/openerp.italia/
+.. |check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/check.png
+.. |no_check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/no_check.png
+.. |menu| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/menu.png
+.. |right_do| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/right_do.png
+.. |exclamation| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/exclamation.png
+.. |warning| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/warning.png
+.. |xml_schema| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/iso/icons/xml-schema.png
+   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/iso/scope/xml-schema.md
+.. |DesktopTelematico| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/DesktopTelematico.png
+   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
+.. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
+   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
+   
+

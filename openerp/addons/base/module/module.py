@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution
-#    Copyright (C) 2004-2013 OpenERP S.A. (<http://openerp.com>).
+#    Odoo, Open Source Management Solution
+#    Copyright (C) 2004-2013 Odoo S.A. (<http://odoo.com>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -157,7 +157,11 @@ class module(osv.osv):
         for module in self.browse(cr, uid, ids, context=context):
             overrides = dict(embed_stylesheet=False, doctitle_xform=False,
                              output_encoding='unicode', xml_declaration=False)
-            output = publish_string(source=module.description, settings_overrides=overrides, writer=MyWriter())
+            # [antoniov 2018-08-31] Avoid translation error
+            try:
+                output = publish_string(source=module.description, settings_overrides=overrides, writer=MyWriter())
+            except:
+                output = 'Error in Description'
             res[module.id] = html_sanitize(output)
         return res
 
@@ -642,7 +646,7 @@ class module(osv.osv):
                     raise openerp.exceptions.AccessDenied()
 
                 try:
-                    _logger.info('Downloading module `%s` from OpenERP Apps', module_name)
+                    _logger.info('Downloading module `%s` from Odoo Apps', module_name)
                     content = urllib2.urlopen(url).read()
                 except Exception:
                     _logger.exception('Failed to fetch module %s', module_name)
@@ -706,7 +710,7 @@ class module(osv.osv):
             shutil.rmtree(tmp)
 
     def get_apps_server(self, cr, uid, context=None):
-        return tools.config.get('apps_server', 'https://apps.openerp.com/apps')
+        return tools.config.get('apps_server', 'https://apps.odoo.com/apps')
 
     def _update_dependencies(self, cr, uid, mod_browse, depends=None):
         if depends is None:
