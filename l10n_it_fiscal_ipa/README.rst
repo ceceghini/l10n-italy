@@ -1,20 +1,67 @@
 |Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
 
-.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/9.0/l10n_it_rea/static/description/icon.png
+.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/9.0/l10n_it_fiscal_ipa/static/description/icon.png
 
-===================
-|icon| REA Register
-===================
+==========================
+|icon| IPA Code (IndicePA)
+==========================
 
 .. contents::
 
 
 |en|
 
+IPA Code
+=========
+
+This module adds IPA (IndicePA) code and Recipient Code fields to partner,
+used by Italian Electronic Invoice.
+
+http://www.indicepa.gov.it
+
+
 
 
 |it|
 
+Codice IPA (IndicePA)
+======================
+
+Questo modulo permette l'inseriento del codice IPA (IndicePA) e del Codice Destinatario
+nell'anagrafica cliente.
+
+Questi dati sono indispensabili per la gestione della Fattura Elettronica B2B e
+per la FatturaPA.
+
+http://www.indicepa.gov.it
+
+
+
+Features / Funzioni
+--------------------
+
++-------------------------------------------------+----------+----------------------------------------------+
+| Feature / Funzione                              |  Status  | Notes / Note                                 |
++-------------------------------------------------+----------+----------------------------------------------+
+| Parter: IPA Code / Codice IPA                   | |check|  | Per FatturaPA                                |
++-------------------------------------------------+----------+----------------------------------------------+
+| Partner: Recipient Code / Codice Destinatario   | |check|  | EInvoice / Per Fattura Elettronica B2B       |
++-------------------------------------------------+----------+----------------------------------------------+
+
+
+
+OCA Differences / Differenze da OCA
+------------------------------------
+
++--------------------------------------+-------------+-------------------+--------------------------------+
+| Description / Descrizione            | Odoo Italia | OCA               | Notes / Note                   |
++--------------------------------------+-------------+-------------------+--------------------------------+
+| Partner view / Vista cliente         | This Module | This Module       | Different layout               |
++--------------------------------------+-------------+-------------------+--------------------------------+
+| IPA Code                             | This Module | This Module       |                                |
++--------------------------------------+-------------+-------------------+--------------------------------+
+| Recipient Code / Codice Destinatario | This Module | l10n_it_fatturapa | |warning| Different deployment |
++--------------------------------------+-------------+-------------------+--------------------------------+
 
 
 
@@ -32,7 +79,7 @@ Deployment is ODOO_DIR/REPOSITORY_DIR/MODULE_DIR where:
 
 | ODOO_DIR is root Odoo directory, i.e. /opt/odoo/9.0
 | REPOSITORY_DIR is downloaded git repository directory, currently is: l10n-italy
-| MODULE_DIR is module directory, currently is: l10n_it_rea
+| MODULE_DIR is module directory, currently is: l10n_it_fiscal_ipa
 | MYDB is the database name
 |
 
@@ -55,12 +102,12 @@ From UI: go to:
 
 |menu| Setting > Modules > Update Modules List
 
-|menu| Setting > Local Modules |right_do| Select **l10n_it_rea** > Install
+|menu| Setting > Local Modules |right_do| Select **l10n_it_fiscal_ipa** > Install
 
 |warning| If your Odoo instance crashes, you can do following instruction
 to recover installation status:
 
-``run_odoo_debug 9.0 -um l10n_it_rea -s -d MYDB``
+``run_odoo_debug 9.0 -um l10n_it_fiscal_ipa -s -d MYDB``
 
 
 
@@ -107,11 +154,18 @@ Credits
 Authors
 --------
 
+
+* `KTec S.r.l. <https://www.ktec.it/>`__
+* `Agile Business Group sagl <https://www.agilebg.com/>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
 Contributors
 -------------
 
+
+* Luigi Di Naro <luigi.dinaro@ktec.it>
+* Alex Comba <alex.comba@agilebg.com>
+* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
 Maintainers
