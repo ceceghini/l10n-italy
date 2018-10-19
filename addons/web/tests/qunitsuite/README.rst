@@ -23,17 +23,25 @@
 |en|
 
 
-Installation
-=============
+Installation / Installazione
+=============================
 
-These instruction are just an example to remember what you have to do.
-Installation is based on `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__
-Deployment is ODOO_DIR/REPOSITORY_DIR/MODULE_DIR where:
++---------------------------------+------------------------------------------+
+| |en|                            | |it|                                     |
++---------------------------------+------------------------------------------+
+| These instruction are just an   | Istruzioni di esempio valide solo per    |
+| example to remember what        | distribuzioni Linux CentOS 7, Ubuntu 14+ |
+| you have to do on Linux.        | e Debian 8+                              |
+|                                 |                                          |
+| Installation is based on:       | L'installazione è basata su:             |
++---------------------------------+------------------------------------------+
+| `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__         |
++---------------------------------+------------------------------------------+
+| Suggested deployment is         | Posizione suggerita per l'installazione: |
++---------------------------------+------------------------------------------+
+| /opt/odoo/7.0/tests/qunitsuite                               |
++----------------------------------------------------------------------------+
 
-| ODOO_DIR is root Odoo directory, i.e. /opt/odoo/7.0
-| REPOSITORY_DIR is downloaded git repository directory, currently is: tests
-| MODULE_DIR is module directory, currently is: qunitsuite
-| MYDB is the database name
 |
 
 ::
@@ -147,6 +155,10 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
 
+|
+
+Last Update / Ultimo aggiornamento: 2018-10-19
+
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
     :alt: Alfa
@@ -162,16 +174,16 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 .. |Codecov Status| image:: https://codecov.io/gh/Odoo-Italia-Associazione/tests/branch/7.0/graph/badge.svg
     :target: https://codecov.io/gh/Odoo-Italia-Associazione/tests/branch/7.0
     :alt: Codecov
-.. |OCA project| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-7.svg
+.. |OCA project| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-7.svg
     :target: https://github.com/OCA/tests/tree/7.0
     :alt: OCA
-.. |Tech Doc| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-7.svg
-    :target: http://wiki.zeroincombenze.org/en/Odoo/7.0/dev
+.. |Tech Doc| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-7.svg
+    :target: https://wiki.zeroincombenze.org/en/Odoo/7.0/dev
     :alt: Technical Documentation
-.. |Help| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-7.svg
-    :target: http://wiki.zeroincombenze.org/it/Odoo/7.0/man
+.. |Help| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-7.svg
+    :target: https://wiki.zeroincombenze.org/it/Odoo/7.0/man
     :alt: Technical Documentation
-.. |Try Me| image:: http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg
+.. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg
     :target: https://odoo7.odoo-italia.org
     :alt: Try Me
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
