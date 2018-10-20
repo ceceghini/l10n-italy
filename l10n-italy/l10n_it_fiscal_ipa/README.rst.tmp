@@ -1,0 +1,88 @@
+[![Build Status](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy.svg?branch=7.0)](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy)
+[![license agpl](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.html)
+[![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=7.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=7.0)
+[![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/7.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/7.0)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg)](https://erp7.zeroincombenze.it)
+
+
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
+
+|Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
+
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/l10n-italy/7.0/l10n_it_fiscal_ipa/static/src/img/icon.png
+
+==========================
+|icon| IPA Code (IndicePA)
+==========================
+
+.. contents::
+
+
+|en|
+
+IPA Code
+========
+
+This module adds IPA (IndicePA) code and Recipient Code fields to partner,
+used by Italian Electronic Invoice.
+
+http://www.indicepa.gov.it
+
+
+
+
+|it|
+
+Codice IPA (IndicePA)
+
+Questo modulo permette l'inseriento del codice IPA (IndicePA) e del Codice Destinatario
+nell'anagrafica cliente.
+
+Questi dati sono indispensabili per la gestione della Fattura Elettronica B2B e
+per la FatturaPA.
+
+http://www.indicepa.gov.it
+
+
+
+Features / Funzioni
+
++-------------------------------------------------+----------+----------------------------------------------+
+| Feature / Funzione                              |  Status  | Notes / Note                                 |
++-------------------------------------------------+----------+----------------------------------------------+
+| Parter: IPA Code / Codice IPA                   | |check|  | Per FatturaPA                                |
++-------------------------------------------------+----------+----------------------------------------------+
+| Partner: Recipient Code / Codice Destinatario   | |check|  | EInvoice / Per Fattura Elettronica B2B       |
++-------------------------------------------------+----------+----------------------------------------------+
+
+
+
+OCA Differences / Differenze da OCA
+
++--------------------------------------+-------------+-------------------+--------------------------------+
+| Description / Descrizione            | Odoo Italia | OCA               | Notes / Note                   |
++--------------------------------------+-------------+-------------------+--------------------------------+
+| Partner view / Vista cliente         | This Module | This Module       | Different layout               |
++--------------------------------------+-------------+-------------------+--------------------------------+
+| IPA Code                             | This Module | This Module       |                                |
++--------------------------------------+-------------+-------------------+--------------------------------+
+| Recipient Code / Codice Destinatario | This Module | l10n_it_fatturapa | |warning| Different deployment |
++--------------------------------------+-------------+-------------------+--------------------------------+
+
+
+
+
+
+|en|
+
+
+Installation
+------------
+
+These instruction are just an example to remember what you have to do.
+
+Deployment is ODOO_DIR/REPOSITORY_DIR/MODULE_DIR where:
+
+| ODOO_DIR is root Odoo directory, i.e. /opt/odoo/7.0
+| REPOSITORY_DIR is downloaded git repository directory, currently is: l10n-italy
+| MODULE_DIR is module directory, currently is: l10n_it_fiscal_ipa
