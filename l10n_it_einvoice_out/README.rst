@@ -54,25 +54,35 @@ ad ulteriori modifiche
 Features / Funzioni
 --------------------
 
-+-------------------------+----------+----------------------------------------------+
-| Feature / Funzione      |  Status  | Notes / Note                                 |
-+-------------------------+----------+----------------------------------------------+
-| Emissione FatturaPA     | |check|  | Genera file .xml versione 1.2                |
-+-------------------------+----------+----------------------------------------------+
-| Emissione Fattura B2B   | |check|  | Genera file .xml versione 1.2                |
-+-------------------------+----------+----------------------------------------------+
-| Dati azienda da fattura | |check|  | Versione OCA utilizza dati azienda da utente |
-+-------------------------+----------+----------------------------------------------+
++--------------------------------------+----------+----------------------------------------------+
+| Feature / Funzione                   |  Status  | Notes / Note                                 |
++--------------------------------------+----------+----------------------------------------------+
+| Emissione FatturaPA                  | |check|  | Genera file .xml versione 1.2                |
++--------------------------------------+----------+----------------------------------------------+
+| Emissione Fattura B2B                | |check|  | Genera file .xml versione 1.2                |
++--------------------------------------+----------+----------------------------------------------+
+| Dati azienda da fattura              | |check|  | Versione OCA utilizza dati azienda da utente |
++--------------------------------------+----------+----------------------------------------------+
+| Controllo dati durante inserimento   | |check|  |                                              |
++--------------------------------------+----------+----------------------------------------------+
 
 
 OCA Differences / Differenze da OCA
 ------------------------------------
 
-+--------------------------------------+---------------------+-------------------------+--------------------------------+
-| Description / Descrizione            | Odoo Italia         | OCA                     | Notes / Note                   |
-+--------------------------------------+---------------------+-------------------------+--------------------------------+
-| Company / Azienda                    | By User / Da Utente | By Invoice / Da Fattura | Different layout               |
-+--------------------------------------+---------------------+-------------------------+--------------------------------+
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
+| Description / Descrizione            | Odoo Italia             | OCA                     | Notes / Note                   |
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
+| Company / Azienda                    | By User / Da Utente     | By Invoice / Da Fattura | Different layout               |
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
+| PEC                                  | PEC fattura o aziendale | Solo PEC fattura        |                                |
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
+| Phone + Fax / Telefono + Fax         | Formato libero          | Solo numeri senza segni |                                |
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
+| Controllo dati durante inserimento   | |check|                 | |no_check|              |                                |
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
+| Strutturazione dati                  |                         |                         | Mix moduli con compatibile     |
++--------------------------------------+-------------------------+-------------------------+--------------------------------+
 
 
 Certifications / Certificazioni
@@ -162,6 +172,21 @@ Upgrade / Aggiornamento
 
 
 
+
+Usage / Uso
+============
+
+|menu| Configurazione > Configurazione > Contabilità > Fattura PA |do_right| Impostare i vari parametri
+|menu| Contabilità > Configurazione > Sezionali > Sezionali |do_right| Impostare sezionale fattura elettronica
+|menu| Contabilità > Configurazione > Imposte > Imposte |do_right| Impostare natura codici IVA
+|menu| Contabilità > Configurazione > Management > Termini di pagamento |do_right| Collegare i termini di pagamento con i relativi termini fiscali
+|menu| Contabilità > Clienti > Clienti |do_right| Impostare Codice Destinatario o PEC o IPA, nazione, partita IVA, codice fiscale
+|menu| Contabilità > Configurazione > Contabilità > Posizioni fiscali |do_right| Collegare posizioni fiscali con regimi fiscali
+
+Per consultazione (non modificare):
+
+|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Natura dell'IVA
+|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Tipi Fattura
 
 
 
@@ -256,7 +281,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-22
+Last Update / Ultimo aggiornamento: 2018-10-23
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
