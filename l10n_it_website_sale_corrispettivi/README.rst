@@ -13,8 +13,6 @@
 
 
 
-
-
 |it|
 
 
@@ -41,23 +39,26 @@ Installation / Installazione
 +---------------------------------+------------------------------------------+
 | Suggested deployment is         | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| /opt/odoo/10.0/l10n-italy/l10n_it_website_sale_corrispettivi                               |
+| **/opt/odoo/10.0/l10n-italy/**                                             |
 +----------------------------------------------------------------------------+
 
 |
 
 ::
 
-    pip install codicefiscale
-    pip install unidecode
-    pip install pyxb==1.2.4
     cd $HOME
     git clone https://github.com/zeroincombenze/tools.git
     cd ./tools
     ./install_tools.sh -p
     export PATH=$HOME/dev:$PATH
     odoo_install_repository l10n-italy -b 10.0 -O oia
+    for pkg in os0 z0lib; do
+        pip install $pkg -U
+    done
+    sudo manage_odoo requirements -b 10.0 -vsy -o /opt/odoo/10.0
 
+
+|
 
 From UI: go to:
 
@@ -72,6 +73,24 @@ to recover installation status:
 
 ``run_odoo_debug 10.0 -um l10n_it_website_sale_corrispettivi -s -d MYDB``
 
+Upgrade / Aggiornamento
+------------------------
+
++---------------------------------+------------------------------------------+
+| |en|                            | |it|                                     |
++---------------------------------+------------------------------------------+
+| When you want upgrade and you   | Per aggiornare, se avete installato con  |
+| installed using above           | le istruzioni di cui sopra:              |
+| statements:                     |                                          |
++---------------------------------+------------------------------------------+
+
+::
+
+    cd /opt/odoo/10.0/l10n-italy/
+    git pull origin 10.0
+    # Adjust following statements as per your system
+    sudo systemctl restart odoo
+
 
 
 
@@ -84,7 +103,6 @@ Known issues / Roadmap
 
 |warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
 paragrafo relativo alle funzionalità e differenze.
-
 
 
 
@@ -110,29 +128,27 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 
 
 
+Credits / Riconoscimenti
+=========================
 
-Credits
-========
-
-Authors
---------
+Authors / Autori
+-----------------
 
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
-Contributors
--------------
+Contributors / Contributi
+--------------------------
 
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
-Maintainers
-------------
+Maintainers / Manutezione
+--------------------------
 
 |Odoo Italia Associazione|
 
 This module is maintained by the Odoo Italia Associazione.
 
 To contribute to this module, please visit https://odoo-italia.org/.
-
 
 
 
@@ -149,7 +165,7 @@ the collaborative development of Odoo features and promote its widespread use.
 is the nonprofit Italian Community Association whose mission
 is to support the collaborative development of Odoo designed for Italian law and markeplace.
 Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
-or available only with Odoo Proprietary License.
+or available only with `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
 Odoo Italia Associazione distributes code under `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
 or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free license.
 
@@ -161,10 +177,9 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL
 o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
-
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-19
+Last Update / Ultimo aggiornamento: 2018-10-22
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
@@ -193,6 +208,9 @@ Last Update / Ultimo aggiornamento: 2018-10-19
 .. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
     :target: https://odoo10.odoo-italia.org
     :alt: Try Me
+.. |OCA Codecov Status| image:: badge-oca-codecov
+    :target: oca-codecov-URL
+    :alt: Codecov
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
    :target: https://odoo-italia.org
    :alt: Odoo Italia Associazione
@@ -206,11 +224,15 @@ Last Update / Ultimo aggiornamento: 2018-10-19
 .. |right_do| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/right_do.png
 .. |exclamation| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/exclamation.png
 .. |warning| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/warning.png
+.. |same| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/same.png
+.. |late| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/late.png
+.. |halt| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/halt.png
+.. |info| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/info.png
 .. |xml_schema| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/iso/icons/xml-schema.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/iso/scope/xml-schema.md
 .. |DesktopTelematico| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/DesktopTelematico.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
 .. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
-   
+
 
