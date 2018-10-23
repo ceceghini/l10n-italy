@@ -11,10 +11,20 @@
 
 |en|
 
+VAT collectability
+===================
+
+E-Invoice and FatturaPA VAT Payment time as per
+`Italian Government Website <http://fatturapa.gov.it>`__
 
 
 |it|
 
+Esigibilità IVA 
+=================
+
+Esigibilità IVA per Comunicazioni Fiscali, Fattura Elettronica e FatturaPA come da 
+`Disposizioni governative FatturaPA <http://fatturapa.gov.it>`__
 
 
 
@@ -134,12 +144,16 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
+
+* `Open Force <https://www.openforce.it/>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
 Contributors / Contributi
 --------------------------
 
-* Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
+* Alessandro Camilli <alessandrocamilli@openforce.it>
+* Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>
 
 Maintainers / Manutezione
 --------------------------
