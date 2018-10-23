@@ -2,23 +2,67 @@
 
 .. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/11.0/l10n_it_einvoice_base/static/description/icon.png
 
-=======================================
-|icon| Italian Localization - FatturaPA
-=======================================
+===========================
+|icon| EInvoice + FatturaPA
+===========================
 
 .. contents::
 
 
 |en|
 
+EInvoice + FatturaPA
+=====================
 
+This module manage infrastructure to manage Italian E Invoice and FatturaPA
+as per send to the SdI (Exchange System by Italian Tax Authority)
 
+|warning| This module may be conflict with OCA modules with error:
+
+*name CryptoBinary used for multiple values in typeBinding*
+
+Please, do not mix OCA module and OIA modules.
+
+|halt| Do not install this module: it is in development status; official release will be avaiable on 2018-10-22
 
 
 |it|
 
+Fattura Elettronica + FatturaPA
+================================
+
+Questo modulo gestisce l'infrastruttura per generare il file xml della Fattura 
+Elettronica e della FatturaPA, versione 1.2, da trasmettere al sistema di interscambio SdI.
+
+|warning| Lo schema di definizione dei file xml, pubblicato
+con urn:www.agenziaentrate.gov.it:specificheTecniche è base per tutti i file
+xml dell'Agenzia delle Entrate; come conseguenza nasce un conflitto tra
+moduli diversi che riferiscono allo schema dell'Agenzia delle Entrate,
+segnalato dall'errore:
+
+|exclamation| **name CryptoBinary used for multiple values in typeBinding**
+
+Tutti i moduli della localizzazione italiana che generano file xml dipendenti
+dallo schema dell'Agenzia delle Entrate **devono** dichiare il modulo
+`l10n_it_ade <../l10n_it_ade>`__ come dipendenza.
+
+Per maggiori informazioni visitare il sito www.odoo-italia.org o contattare
+l'ultimo autore: Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>.
+
+|halt| Non installare questo modulo: è in fase di svilupp; il rilascio è previsto per lunedì 22-10-2018
 
 
+
+Certifications / Certificazioni
+--------------------------------
+
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+----------------------------------------------+
+| Logo                 | Ente/Certificato                                                                                                                                                                                                  | Data inizio   | Da fine      | Note                                         |
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+----------------------------------------------+
+| |xml\_schema|        | `ISO + Agenzia delle Entrate <http://www.agenziaentrate.gov.it/wps/content/Nsilib/Nsi/Strumenti/Specifiche+tecniche/Specifiche+tecniche+comunicazioni/Fatture+e+corrispettivi+ST/>`__                             | 01-06-2017    | 31-12-2018   | Validazione contro schema xml                |
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+----------------------------------------------+
+| |FatturaPA|          | `FatturaPA <https://www.agenziaentrate.gov.it/wps/content/Nsilib/Nsi/Schede/Comunicazioni/Fatture+e+corrispettivi/Fatture+e+corrispettivi+ST/ST+invio+di+fatturazione+elettronica/?page=schedecomunicazioni/>`__  | 01-06-2017    | 31-12-2018   | Controllo tramite sito Agenzia delle Entrate |
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+----------------------------------------------+
 
 
 
@@ -41,23 +85,26 @@ Installation / Installazione
 +---------------------------------+------------------------------------------+
 | Suggested deployment is         | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| /opt/odoo/11.0/l10n-italy/l10n_it_einvoice_base                               |
+| **/opt/odoo/11.0/l10n-italy/**                                             |
 +----------------------------------------------------------------------------+
 
 |
 
 ::
 
-    pip install codicefiscale
-    pip install unidecode
-    pip install pyxb==1.2.4
     cd $HOME
     git clone https://github.com/zeroincombenze/tools.git
     cd ./tools
     ./install_tools.sh -p
     export PATH=$HOME/dev:$PATH
     odoo_install_repository l10n-italy -b 11.0 -O oia
+    for pkg in os0 z0lib; do
+        pip install $pkg -U
+    done
+    sudo manage_odoo requirements -b 11.0 -vsy -o /opt/odoo/11.0
 
+
+|
 
 From UI: go to:
 
@@ -72,6 +119,23 @@ to recover installation status:
 
 ``run_odoo_debug 11.0 -um l10n_it_einvoice_base -s -d MYDB``
 
+Upgrade / Aggiornamento
+------------------------
+
++---------------------------------+------------------------------------------+
+| |en|                            | |it|                                     |
++---------------------------------+------------------------------------------+
+| When you want upgrade and you   | Per aggiornare, se avete installato con  |
+| installed using above           | le istruzioni di cui sopra:              |
+| statements:                     |                                          |
++---------------------------------+------------------------------------------+
+
+::
+
+    cd /opt/odoo/11.0/l10n-italy/
+    git pull origin 11.0
+    # Adjust following statements as per your system
+    sudo systemctl restart odoo
 
 
 
@@ -82,10 +146,13 @@ to recover installation status:
 Known issues / Roadmap
 =======================
 
-|warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
-paragrafo relativo alle funzionalità e differenze.
+Please, do not mix the following OCA and OIA module:
 
+:warning: l10n_it_base replacing OCA module
 
+:warning: l10n_it_ade module does not exist in OCA repository
+
+:warning: l10n_it_fiscalcode replacing OCA module
 
 
 
@@ -110,29 +177,35 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 
 
 
+Credits / Riconoscimenti
+=========================
 
-Credits
-========
+Authors / Autori
+-----------------
 
-Authors
---------
 
+* `Agile Business Group sagl <https://www.agilebg.com/>`__
+* `Innoviu srl <http://www.innoviu.com>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
-Contributors
--------------
+Contributors / Contributi
+--------------------------
 
+
+* Davide Corio <davide.corio@abstract.it>
+* Roberto Onnis <roberto.onnis@innoviu.com>
+* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
+* Alessio Gerace <alessio.gerace@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
-Maintainers
-------------
+Maintainers / Manutezione
+--------------------------
 
 |Odoo Italia Associazione|
 
 This module is maintained by the Odoo Italia Associazione.
 
 To contribute to this module, please visit https://odoo-italia.org/.
-
 
 
 
@@ -149,7 +222,7 @@ the collaborative development of Odoo features and promote its widespread use.
 is the nonprofit Italian Community Association whose mission
 is to support the collaborative development of Odoo designed for Italian law and markeplace.
 Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
-or available only with Odoo Proprietary License.
+or available only with `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
 Odoo Italia Associazione distributes code under `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
 or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free license.
 
@@ -161,10 +234,9 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL
 o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
-
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-19
+Last Update / Ultimo aggiornamento: 2018-10-23
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
@@ -193,6 +265,9 @@ Last Update / Ultimo aggiornamento: 2018-10-19
 .. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-11.svg
     :target: https://odoo11.odoo-italia.org
     :alt: Try Me
+.. |OCA Codecov Status| image:: badge-oca-codecov
+    :target: oca-codecov-URL
+    :alt: Codecov
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
    :target: https://odoo-italia.org
    :alt: Odoo Italia Associazione
@@ -206,11 +281,15 @@ Last Update / Ultimo aggiornamento: 2018-10-19
 .. |right_do| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/right_do.png
 .. |exclamation| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/exclamation.png
 .. |warning| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/warning.png
+.. |same| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/same.png
+.. |late| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/late.png
+.. |halt| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/halt.png
+.. |info| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/info.png
 .. |xml_schema| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/iso/icons/xml-schema.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/iso/scope/xml-schema.md
 .. |DesktopTelematico| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/DesktopTelematico.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
 .. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
-   
+
 
