@@ -17,13 +17,14 @@ EInvoice + FatturaPA
 This module manage infrastructure to manage Italian E Invoice and FatturaPA
 as per send to the SdI (Exchange System by Italian Tax Authority)
 
-|warning| This module may be conflict with OCA modules with error:
+|warning| This module may be conflict with some OCA modules with error:
 
 *name CryptoBinary used for multiple values in typeBinding*
 
 Please, do not mix OCA module and OIA modules.
+This module replaces l10n_it_fatturapa of OCA distribution.
 
-|halt| Do not install this module: it is in development status; official release will be avaiable on 2018-10-22
+|halt| Do not install this module: it is still in development status.
 
 
 |it|
@@ -40,16 +41,18 @@ xml dell'Agenzia delle Entrate; come conseguenza nasce un conflitto tra
 moduli diversi che riferiscono allo schema dell'Agenzia delle Entrate,
 segnalato dall'errore:
 
-|exclamation| **name CryptoBinary used for multiple values in typeBinding**
+|exclamation| name CryptoBinary used for multiple values in typeBinding
 
 Tutti i moduli della localizzazione italiana che generano file xml dipendenti
 dallo schema dell'Agenzia delle Entrate **devono** dichiare il modulo
-`l10n_it_ade <../l10n_it_ade>`__ come dipendenza.
+`https://github.com/Odoo-Italia-Associazione/l10n-italy/tree/10.0/l10n_it_ade>`__ come dipendenza.
 
 Per maggiori informazioni visitare il sito www.odoo-italia.org o contattare
 l'ultimo autore: Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>.
 
-|halt| Non installare questo modulo: è in fase di svilupp; il rilascio è previsto per lunedì 22-10-2018
+Questo modulo sostituisce il il modulo l10n_it_fatturapa della distribuzione OCA.
+
+|halt| Non installare questo modulo: è ancora in fase di sviluppo.
 
 
 
@@ -146,13 +149,22 @@ Upgrade / Aggiornamento
 Known issues / Roadmap
 =======================
 
-Please, do not mix the following OCA and OIA module:
+Please, do not mix the following OCA and OIA module.
 
-:warning: l10n_it_base replacing OCA module
+|warning| Do not use l10n_it_base module of OCA distribution
 
-:warning: l10n_it_ade module does not exist in OCA repository
+|warning| Do not use l10n_it_base module of OCA distribution
 
-:warning: l10n_it_fiscalcode replacing OCA module
+|warning| Do not use l10n_it_split_payment module of OCA distribution
+
+|warning| Do not install l10n_it_codici_carica module of OCA distribution
+
+|warning| Do not install l10n_it_fiscal_document_type module of OCA distribution
+
+|warning| Do not install l10n_it_fiscalcode_invoice module of OCA distribution
+
+|warning| Do not install l10n_it_ipa module of OCA distribution
+
 
 
 
@@ -236,7 +248,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-23
+Last Update / Ultimo aggiornamento: 2018-10-25
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

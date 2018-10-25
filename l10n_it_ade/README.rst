@@ -53,17 +53,17 @@ l'ultimo autore: Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>.
 Features / Funzioni
 --------------------
 
-+--------------------------------------+----------+----------------------------------------------+
-| Feature / Funzione                   |  Status  | Notes / Note                                 |
-+--------------------------------------+----------+----------------------------------------------+
-| Emissione FatturaPA                  | |check|  | Genera file .xml versione 1.2                |
-+--------------------------------------+----------+----------------------------------------------+
-| Emissione Fattura B2B                | |check|  | Genera file .xml versione 1.2                |
-+--------------------------------------+----------+----------------------------------------------+
-| Dati azienda da fattura              | |check|  | Versione OCA utilizza dati azienda da utente |
-+--------------------------------------+----------+----------------------------------------------+
-| Controllo dati durante inserimento   | |check|  |                                              |
-+--------------------------------------+----------+----------------------------------------------+
++------------------------------------------------------+----------+----------------------------------------------+
+| Feature / Funzione                                   |  Status  | Notes / Note                                 |
++------------------------------------------------------+----------+----------------------------------------------+
+| Generate / Emissione FatturaPA                       | |check|  | Genera file .xml versione 1.2                |
++------------------------------------------------------+----------+----------------------------------------------+
+| Generate / Emissione Fattura B2B                     | |check|  | Genera file .xml versione 1.2                |
++------------------------------------------------------+----------+----------------------------------------------+
+| Company info form invoice / Dati azienda da fattura  | |check|  | Versione OCA utilizza dati azienda da utente |
++------------------------------------------------------+----------+----------------------------------------------+
+| Validation suring editing / Controlli in tempo reale | |check|  |                                              |
++------------------------------------------------------+----------+----------------------------------------------+
 
 
 OCA Differences / Differenze da OCA
@@ -267,7 +267,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-23
+Last Update / Ultimo aggiornamento: 2018-10-25
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
