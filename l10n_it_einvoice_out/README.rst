@@ -233,14 +233,13 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
-
 * `Agile Business Group sagl <https://www.agilebg.com/>`__
 * `Innoviu srl <http://www.innoviu.com>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
+
 Contributors / Contributi
 --------------------------
-
 
 * Davide Corio <davide.corio@abstract.it>
 * Roberto Onnis <roberto.onnis@innoviu.com>
@@ -248,6 +247,7 @@ Contributors / Contributi
 * Alessio Gerace <alessio.gerace@agilebg.com>
 * Alex Comba <alex.comba@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
 
 Maintainers / Manutezione
 --------------------------
@@ -287,7 +287,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

@@ -44,13 +44,13 @@ segnalato dall'errore:
 |exclamation| name CryptoBinary used for multiple values in typeBinding
 
 Tutti i moduli della localizzazione italiana che generano file xml dipendenti
-dallo schema dell'Agenzia delle Entrate **devono** dichiare il modulo
+dallo schema dell'Agenzia delle Entrate devono dichiarare il modulo
 `https://github.com/Odoo-Italia-Associazione/l10n-italy/tree/10.0/l10n_it_ade>`__ come dipendenza.
 
 Per maggiori informazioni visitare il sito www.odoo-italia.org o contattare
 l'ultimo autore: Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>.
 
-Questo modulo sostituisce il il modulo l10n_it_fatturapa della distribuzione OCA.
+Questo modulo sostituisce il modulo l10n_it_fatturapa della distribuzione OCA.
 
 |halt| Non installare questo modulo: è ancora in fase di sviluppo.
 
@@ -195,20 +195,18 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
-
+* `Abstract <https://abstract.it/>`__
 * `Agile Business Group sagl <https://www.agilebg.com/>`__
-* `Innoviu srl <http://www.innoviu.com>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+
 
 Contributors / Contributi
 --------------------------
 
-
 * Davide Corio <davide.corio@abstract.it>
-* Roberto Onnis <roberto.onnis@innoviu.com>
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
-* Alessio Gerace <alessio.gerace@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
 
 Maintainers / Manutezione
 --------------------------
@@ -248,7 +246,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

@@ -56,32 +56,33 @@ Features / Funzioni
 +------------------------------------------------------+----------+----------------------------------------------+
 | Feature / Funzione                                   |  Status  | Notes / Note                                 |
 +------------------------------------------------------+----------+----------------------------------------------+
-| Generate / Emissione FatturaPA                       | |check|  | Genera file .xml versione 1.2                |
+| Fiscal Invoice Type / Tipo fattura fiscale           | |check|  | Codifica tipo di fattura come da AdE         |
 +------------------------------------------------------+----------+----------------------------------------------+
-| Generate / Emissione Fattura B2B                     | |check|  | Genera file .xml versione 1.2                |
+| Codice Carica                                        | |check|  | Codifica codice carica come da AdE           |
 +------------------------------------------------------+----------+----------------------------------------------+
-| Company info form invoice / Dati azienda da fattura  | |check|  | Versione OCA utilizza dati azienda da utente |
-+------------------------------------------------------+----------+----------------------------------------------+
-| Validation suring editing / Controlli in tempo reale | |check|  |                                              |
+| Tax Nature / Natura fiscael dell'IVA                 | |check|  | Codifica natura fiscale dell'IVA come da AdE |
 +------------------------------------------------------+----------+----------------------------------------------+
 
 
-OCA Differences / Differenze da OCA
-------------------------------------
-
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
-| Description / Descrizione            | Odoo Italia             | OCA                     | Notes / Note                   |
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
-| Company / Azienda                    | By User / Da Utente     | By Invoice / Da Fattura | Different layout               |
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
-| PEC                                  | PEC fattura o aziendale | Solo PEC fattura        |                                |
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
-| Phone + Fax / Telefono + Fax         | Formato libero          | Solo numeri senza segni |                                |
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
-| Controllo dati durante inserimento   | |check|                 | |no_check|              |                                |
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
-| Strutturazione dati                  |                         |                         | Mix moduli con compatibile     |
-+--------------------------------------+-------------------------+-------------------------+--------------------------------+
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Dato Fattura Elettronica       | Nome tecnico                 | Modulo OCA                  | Modulo OIA                  | Note tecnico OCA          | Nome tecnico OIA          | Note                                     |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Schema di definione xsd        |                              | l10n_it_fatturapa           | l10n_it_ade                 |                           |                           | Il modulo di OIA serve anche alla liquid |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Natura dell'IVA                |                              | l10n_it_account_tax_kind    | l10n_it_ade                 | account.tax.kind          | italy.ade.tax.nature      | Estensione della tabella account.tax usa |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Termini di pagamento           |                              | l10n_it_fiscal_payment_term | l10n_it_fiscal_payment_term | fatturapa.payment_term    | fatturapa.payment_term    | Modelli compatibili tra OIA e OCA        |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Metodi di pagamento            |                              | l10n_it_fiscal_payment_term | l10n_it_fiscal_payment_term | fatturapa.payment_method  | fatturapa.payment_method  | Modelli compatibili tra OIA e OCA        |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Codice Destinatario            | codice_destinatario          | l10n_it_fatturapa           | l10n_it_fiscal_ipa          | res.partner               | res.partner               |                                          |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Partner è PA?                 | is_pa                        | l10n_it_fatturapa           | l10n_it_fiscal_ipa          | res.partner               | res.partner               |                                          |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Soggetto a Fattura elettronica | electronic_invoice_subjected | l10n_it_fatturapa           | l10n_it_fiscal_ipa          | res.partner               | res.partner               | Il nome del campo è diverso             |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
+| Regime Fiscale                 | fiscal_position              | l10n_it_fatturapa           | l10n_it_fatturapa           | fatturapa.fiscal_position | fatturapa.fiscal_position |                                          |
++--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
 
 
 Certifications / Certificazioni
@@ -220,14 +221,14 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
-
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+
 
 Contributors / Contributi
 --------------------------
 
-
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
 
 Maintainers / Manutezione
 --------------------------
@@ -267,7 +268,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

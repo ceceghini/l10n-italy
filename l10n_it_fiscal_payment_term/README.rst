@@ -144,18 +144,18 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
-
 * `Agile BG <https://www.agilebg.com/>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
+
 Contributors / Contributi
 --------------------------
-
 
 * Davide Corio
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Alessio Gerace <alessio.gerace@agilebg.com>
 * Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>
+
 
 Maintainers / Manutezione
 --------------------------
@@ -195,7 +195,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

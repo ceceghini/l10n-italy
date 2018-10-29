@@ -13,6 +13,7 @@
 
 
 
+
 |it|
 
 
@@ -179,7 +180,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

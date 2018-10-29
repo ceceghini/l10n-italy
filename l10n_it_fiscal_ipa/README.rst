@@ -189,19 +189,19 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
-
 * `KTec S.r.l. <https://www.ktec.it/>`__
 * `Agile Business Group sagl <https://www.agilebg.com/>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
+
 Contributors / Contributi
 --------------------------
-
 
 * Luigi Di Naro <luigi.dinaro@ktec.it>
 * Alex Comba <alex.comba@agilebg.com>
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
 
 Maintainers / Manutezione
 --------------------------
@@ -241,7 +241,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

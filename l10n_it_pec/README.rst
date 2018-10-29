@@ -143,18 +143,18 @@ Credits / Riconoscimenti
 Authors / Autori
 -----------------
 
-
 * `Abstract <https://www.abstract.it>`__
 * `Apulia Software <https://www.apuliasoftware.it>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
+
 Contributors / Contributi
 --------------------------
-
 
 * Franco Tampieri <franco.tampieri@abstract.it>
 * Francesco Apruzzese <f.apruzzese@apuliasoftware.it>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
+
 
 Maintainers / Manutezione
 --------------------------
@@ -194,7 +194,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-25
+Last Update / Ultimo aggiornamento: 2018-10-29
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

@@ -13,12 +13,12 @@ segnalato dall'errore:
 |exclamation| name CryptoBinary used for multiple values in typeBinding
 
 Tutti i moduli della localizzazione italiana che generano file xml dipendenti
-dallo schema dell'Agenzia delle Entrate **devono** dichiare il modulo
+dallo schema dell'Agenzia delle Entrate devono dichiarare il modulo
 `{{GIT_URL_ROOT}}/tree/{{branch}}/l10n_it_ade>`__ come dipendenza.
 
 Per maggiori informazioni visitare il sito www.odoo-italia.org o contattare
 l'ultimo autore: Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>.
 
-Questo modulo sostituisce il il modulo l10n_it_fatturapa della distribuzione OCA.
+Questo modulo sostituisce il modulo l10n_it_fatturapa della distribuzione OCA.
 
 |halt| Non installare questo modulo: è ancora in fase di sviluppo.
