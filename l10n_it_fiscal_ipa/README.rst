@@ -1,18 +1,20 @@
-|Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
-
-.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/10.0/l10n_it_fiscal_ipa/static/description/icon.png
-
 ==========================
 |icon| IPA Code (IndicePA)
 ==========================
 
+**IPA Code and Destination Code in Partner Record**
+
+.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/10.0/l10n_it_fiscal_ipa/static/description/icon.png
+
+|Maturity| |Build Status| |Coverage Status| |Codecov Status| |license gpl| |Tech Doc| |Help| |Try Me|
+
 .. contents::
 
+Overview / Panoramica
+=====================
 
-|en|
-
-IPA Code
-=========
+|en| IPA Code
+=============
 
 This module adds IPA (IndicePA) code and Recipient Code fields to partner,
 used by Italian Electronic Invoice.
@@ -20,11 +22,8 @@ used by Italian Electronic Invoice.
 http://www.indicepa.gov.it
 
 
-
-|it|
-
-Codice IPA (IndicePA)
-======================
+|it| Codice IPA (IndicePA)
+==========================
 
 Questo modulo permette l'inserimento del codice IPA (IndicePA) e del Codice Destinatario
 nell'anagrafica cliente.
@@ -35,8 +34,11 @@ per la FatturaPA.
 http://www.indicepa.gov.it
 
 
+Features / Caratteristiche
+--------------------------
+
 Features / Funzioni
---------------------
+-------------------
 
 +-------------------------------------------------+----------+----------------------------------------------+
 | Feature / Funzione                              |  Status  | Notes / Note                                 |
@@ -47,39 +49,26 @@ Features / Funzioni
 +-------------------------------------------------+----------+----------------------------------------------+
 
 
-OCA Differences / Differenze da OCA
-------------------------------------
+OCA comparation / Confronto con OCA
+-----------------------------------
 
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| Description / Descrizione            | Odoo Italia                   | OCA               | Notes / Note                   |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| Validation checks / Validazioni      | |check|                       | |no_check|        |                                |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| Partner view / Vista cliente         | This Module                   | This Module       | Different layout               |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| IPA Code                             | This Module                   | This Module       |                                |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| Recipient Code / Codice Destinatario | This Module                   | l10n_it_fatturapa | |warning| Different deployment |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| Is PA / Pubbblica Amministrazione?   | This Module                   | l10n_it_fatturapa | |warning| Different deployment |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| EInvoice / Soggetto Fattura E.       | This Module                   | l10n_it_fatturapa | |warning| Different deployment |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| EORI Code / Codice EORI              | This Module                   | l10n_it_fatturapa | |warning| Different deployment |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| License Code / Codice Licenza        | This Module                   | l10n_it_fatturapa | |warning| Different deployment |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
-| PEC                                  | PEC destinatario o PEC legale | PEC destinatario  | |warning| Different deployment |
-+--------------------------------------+-------------------------------+-------------------+--------------------------------+
+|OCA project|
 
 
+Getting started / Come iniziare
+===============================
+
+|Try Me|
 
 
-|en|
+Prerequisites / Prerequisiti
+----------------------------
 
+* python
+* postgresql 9.2+
 
 Installation / Installazione
-=============================
+----------------------------
 
 +---------------------------------+------------------------------------------+
 | |en|                            | |it|                                     |
@@ -88,16 +77,14 @@ Installation / Installazione
 | example to remember what        | distribuzioni Linux CentOS 7, Ubuntu 14+ |
 | you have to do on Linux.        | e Debian 8+                              |
 |                                 |                                          |
-| Installation is based on:       | L'installazione è basata su:             |
+| Installation is built with:     | L'installazione è costruita con:         |
 +---------------------------------+------------------------------------------+
 | `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__         |
 +---------------------------------+------------------------------------------+
 | Suggested deployment is         | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| **/opt/odoo/10.0/l10n-italy/**                                             |
+| /opt/odoo/10.0/l10n-italy/                                                 |
 +----------------------------------------------------------------------------+
-
-|
 
 ::
 
@@ -112,24 +99,14 @@ Installation / Installazione
     done
     sudo manage_odoo requirements -b 10.0 -vsy -o /opt/odoo/10.0
 
-
-|
-
 From UI: go to:
 
-|menu| Setting > Activate Developer mode 
-
-|menu| Apps > Update Apps List
-
-|menu| Setting > Apps |right_do| Select **l10n_it_fiscal_ipa** > Install
-
-|warning| If your Odoo instance crashes, you can do following instruction
-to recover installation status:
-
-``run_odoo_debug 10.0 -um l10n_it_fiscal_ipa -s -d MYDB``
+* |menu| Setting > Activate Developer mode 
+* |menu| Apps > Update Apps List
+* |menu| Setting > Apps |right_do| Select **l10n_it_fiscal_ipa** > Install
 
 Upgrade / Aggiornamento
-------------------------
+-----------------------
 
 +---------------------------------+------------------------------------------+
 | |en|                            | |it|                                     |
@@ -146,24 +123,22 @@ Upgrade / Aggiornamento
     # Adjust following statements as per your system
     sudo systemctl restart odoo
 
+From UI: go to:
+
+* |menu| Setting > Activate Developer mode
+* |menu| Apps > Update Apps List
+* |menu| Setting > Apps |right_do| Select **l10n_it_fiscal_ipa** > Update
+
+Support / Supporto
+------------------
+
+|Odoo Italia Associazione| This module is maintained by the Odoo Italia Associazione and support is supplied
+through its `forum <https://odoo-italia.org/index.php/kunena/recente>`__
 
 
 
-
-
-
-
-Known issues / Roadmap
-=======================
-
-|warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
-paragrafo relativo alle funzionalità e differenze.
-
-
-
-
-Issue Tracker
-==============
+Get involved / Ci mettiamo in gioco
+===================================
 
 Bug reports are welcome! You can use the issue tracker to report bugs,
 and/or submit pull requests on `GitHub Issues
@@ -171,48 +146,45 @@ and/or submit pull requests on `GitHub Issues
 
 In case of trouble, please check there if your issue has already been reported.
 
-
 Proposals for enhancement
---------------------------
+-------------------------
 
 If you have a proposal to change this module, you may want to send an email to
 <moderatore@odoo-italia.org> for initial feedback.
 An Enhancement Proposal may be submitted if your idea gains ground.
 
 
-
-
-
-Credits / Riconoscimenti
-=========================
+Credits / Titoli di coda
+========================
 
 Authors / Autori
------------------
+----------------
 
 * `KTec S.r.l. <https://www.ktec.it/>`__
 * `Agile Business Group sagl <https://www.agilebg.com/>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
-
-Contributors / Contributi
---------------------------
+Contributors / Contributi da
+----------------------------
 
 * Luigi Di Naro <luigi.dinaro@ktec.it>
 * Alex Comba <alex.comba@agilebg.com>
 * Lorenzo Battistini <lorenzo.battistini@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
+Acknowledges / Riconoscimenti
+-----------------------------
 
-Maintainers / Manutezione
---------------------------
-
-|Odoo Italia Associazione|
-
-This module is maintained by the Odoo Italia Associazione.
-
-To contribute to this module, please visit https://odoo-italia.org/.
-
-
++-----------------------------------+-------------------------------------------+
+| |en|                              | |it|                                      |
++-----------------------------------+-------------------------------------------+
+| This software inherits from past  | Questo software eredita da versioni       |
+| versions some parts of code. Even | passate alcune parti di codice. Anche     |
+| if people did not actively        | se non hanno partecipato attivamente allo |
+| participate to development, we    | allo sviluppo, noi siamo grati a tutte le |
+| acknowledge them for their prior  | persone che precedentemente vi hanno      |
+| contributions.                    | contribuito.                              |
++-----------------------------------+-------------------------------------------+
 
 ----------------
 
@@ -239,9 +211,12 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL
 o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
+|chat_with_us|
+
+
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-29
+Last Update / Ultimo aggiornamento: 2018-11-02
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
@@ -270,12 +245,15 @@ Last Update / Ultimo aggiornamento: 2018-10-29
 .. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
     :target: https://odoo10.odoo-italia.org
     :alt: Try Me
-.. |OCA Codecov Status| image:: badge-oca-codecov
-    :target: oca-codecov-URL
+.. |OCA Codecov Status| image:: Unknown badge-oca-codecov
+    :target: Unknown oca-codecov-URL
     :alt: Codecov
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
    :target: https://odoo-italia.org
    :alt: Odoo Italia Associazione
+.. |Zeroincombenze| image:: https://avatars0.githubusercontent.com/u/6972555?s=460&v=4
+   :target: https://www.zeroincombenze.it/
+   :alt: Zeroincombenze
 .. |en| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/en_US.png
    :target: https://www.facebook.com/groups/openerp.italia/
 .. |it| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/it_IT.png
@@ -296,5 +274,5 @@ Last Update / Ultimo aggiornamento: 2018-10-29
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
 .. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
-
-
+.. |chat_with_us| image:: https://www.shs-av.com/wp-content/chat_with_us.gif
+   :target: https://gitter.im/odoo_italia/development

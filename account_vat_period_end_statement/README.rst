@@ -1,239 +1,180 @@
-|Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
-
-.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/10.0/account_vat_period_end_statement/static/description/icon.png
-
-===============================
-|icon| Period End VAT Statement
-===============================
-
-.. contents::
+[![Build Status](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy.svg?branch=10.0)](https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy)
+[![license lgpl](https://img.shields.io/badge/licence-LGPL--3-7379c3.svg)](https://www.gnu.org/licenses/lgpl.html)
+[![Coverage Status](https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0)](https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0)
+[![codecov](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg)](https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](https://erp10.zeroincombenze.it)
 
 
-|en|
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
+
+.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+    :alt: License: AGPL-3
+
+Period End VAT Statement
+========================
+
+This module helps to register the VAT statement of period end.
 
 
+Installation
+------------
 
+Configuration
+-------------
 
-|it|
+In order to generate VAT statement's periods,
+open Accounting > Configuration > Accounting > Date range > Generate Date Ranges and select:
 
+* Prefix: Prefix identiying the year of the periods to be generated
+* Duration: 1 month
+* Number of ranges to generate: 12
+* Type: Create a type or use an existing one, no specific type's configuration is required
+* Date start: first day of the period's year (for instance 01/01/2018)
 
+In order to load the correct amount from tax, the tax has to be
+associated to the account involved in the statement.
+This configuration can be performed for each tax: open a tax in
+Accounting > Configuration > Accounting > Taxes, then in the tab Advanced options
+select the correct account (for instance the account debit VAT)
+for the field 'Account used for VAT statement'.
 
+If you need to calculate interest, you can add default information in your
+company data (percentage and account), in the VAT statement tab.
 
+Italian - Configurazione
 
+Per generare i periodi della dichiarazione IVA,
+aprire Contabilità > Configurazione > Contabilità > Intervalli date > Genera intervalli date.
 
-|en|
+* Prefisso: Prefisso identificativo dell'anno dei periodi da generare
+* Durata: 1 mese
+* Numero di intervalli da generare: 12
+* Tipo: Creare un tipo o utilizzarne uno esistente, non è richiesta una configurazione perticolare per il tipo
+* Data di inizio: primo giorno dell'anno dei periodi da generare (ad esempio 01/01/2018)
 
+Per caricare l'importo corretto, una tassa deve essere associata al conto utilizzato nella liquidazione.
+Questa configurazione può essere fatta per ogni tassa:
+aprire la tassa da Contabilità > Configurazione > Contabilità > Imposte,
+quindi nel tab 'Impostazioni avanzate' selezionare il conto corretto (ad esempio IVA debito)
+per il campo 'Conto utilizzato per la liquidazione IVA'.
 
-Installation / Installazione
-=============================
+Per calcolare gli interessi, è possibile aggiungere le informazioni da utilizzare (conto e percentuale)
+nei dati aziendali, nel tab Liquidazione IVA.
 
-+---------------------------------+------------------------------------------+
-| |en|                            | |it|                                     |
-+---------------------------------+------------------------------------------+
-| These instruction are just an   | Istruzioni di esempio valide solo per    |
-| example to remember what        | distribuzioni Linux CentOS 7, Ubuntu 14+ |
-| you have to do on Linux.        | e Debian 8+                              |
-|                                 |                                          |
-| Installation is based on:       | L'installazione è basata su:             |
-+---------------------------------+------------------------------------------+
-| `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__         |
-+---------------------------------+------------------------------------------+
-| Suggested deployment is         | Posizione suggerita per l'installazione: |
-+---------------------------------+------------------------------------------+
-| **/opt/odoo/10.0/l10n-italy/**                                             |
-+----------------------------------------------------------------------------+
+Usage
+-----
 
-|
+=====
 
-::
+In order to create a 'VAT Statement', open Accounting > Adviser > VAT Statements.
+Select a Journal that will contain the journal entries of the statement.
+The field Tax authority VAT account contains the account where the statement balance will be registered.
 
-    cd $HOME
-    git clone https://github.com/zeroincombenze/tools.git
-    cd ./tools
-    ./install_tools.sh -p
-    export PATH=$HOME/dev:$PATH
-    odoo_install_repository l10n-italy -b 10.0 -O oia
-    for pkg in os0 z0lib; do
-        pip install $pkg -U
-    done
-    sudo manage_odoo requirements -b 10.0 -vsy -o /opt/odoo/10.0
+The 'VAT statement' object allows to specify every amount and relative account
+used by the statement.
+By default, amounts of debit and credit taxes are automatically loaded
+from taxes of the selected periods (see Configuration to correctly generate the periods).
+Previous debit or credit is loaded from previous VAT statement, according
+to its payments status.
 
+In order to generate the journal entry, click on 'Create move' button, inside the 'Accounts' tab.
+If you select a payment term, the due date(s) will be set.
 
-|
+The 'tax authority' tab contains information about payment(s),
+here you can see statement's result ('authority VAT amount') and residual
+amount to pay ('Balance').
+The statement can be paid like every other debit, by journal item
+reconciliation.
 
-From UI: go to:
+It is also possible to print the 'VAT statement' clicking on print > Print VAT period end statement.
 
-|menu| Setting > Activate Developer mode 
+Italian - Utilizzo
 
-|menu| Apps > Update Apps List
+Per fare la liquidazione IVA, aprire Contabilità > Contabilità > Liquidazioni IVA.
+Selezionare un sezionale che conterrà le registrazioni contabili della liquidazione.
+Il campo Conto IVA Erario contiene il conto dove verrà effettuata la registrazione della liquidazione IVA.
 
-|menu| Setting > Apps |right_do| Select **account_vat_period_end_statement** > Install
+L'oggetto 'Liquidazione IVA' permette di specificare ogni importo e il conto utilizzato dalla liquidazione.
+Di norma, gli importi di debito e credito delle tasse vengono caricati automaticamente dai periodi selezionati
+(vedere Configurazione per generare correttamente i periodi).
+I debiti e crediti precedenti vengono caricati dalle liquidazioni IVA precedenti, in base allo stato del loro pagamento.
 
-|warning| If your Odoo instance crashes, you can do following instruction
-to recover installation status:
+Per creare la registrazione contabile, cliccare sul bottone 'Crea movimento', dentro il tab 'Conti'.
+Se i termini di pagamento sono impostati viene scritta anche la scadenza (o le scadenze).
 
-``run_odoo_debug 10.0 -um account_vat_period_end_statement -s -d MYDB``
+Il tab 'Erario' contiene informazioni sui pagamenti,
+qui si possono visualizzare i risultati della liquidazione ('Importo IVA erario')
+e l'importo residuo da pagare ('Importo a saldo').
+La liquidazione può essere pagata come qualunque altro debito, con la riconciliazione delle registrazioni contabili.
 
-Upgrade / Aggiornamento
-------------------------
-
-+---------------------------------+------------------------------------------+
-| |en|                            | |it|                                     |
-+---------------------------------+------------------------------------------+
-| When you want upgrade and you   | Per aggiornare, se avete installato con  |
-| installed using above           | le istruzioni di cui sopra:              |
-| statements:                     |                                          |
-+---------------------------------+------------------------------------------+
-
-::
-
-    cd /opt/odoo/10.0/l10n-italy/
-    git pull origin 10.0
-    # Adjust following statements as per your system
-    sudo systemctl restart odoo
-
-
-
-
-
-
-
+È inoltre possibile stampare la liquidazione IVA cliccando su Stampa > Stampa liquidazione IVA.
 
 Known issues / Roadmap
-=======================
+----------------------
 
-|warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
-paragrafo relativo alle funzionalità e differenze.
+Bug Tracker
+-----------
 
+Credits
+-------
 
+### Contributors
 
+* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
+* Elena Carlesso <ecarlesso@linkgroup.it>
+* Marco Marchiori <marcomarkiori@gmail.com>
+* Sergio Corato <sergiocorato@gmail.com>
+* Andrea Gallina <a.gallina@apuliasoftware.it>
+* Alex Comba <alex.comba@agilebg.com>
+* Alessandro Camilli <camillialex@gmail.com>
+* Simone Rubino <simone.rubino@agilebg.com>
 
-Issue Tracker
-==============
+Do not contact contributors directly about support or help with technical issues.
 
-Bug reports are welcome! You can use the issue tracker to report bugs,
-and/or submit pull requests on `GitHub Issues
-<https://github.com/Odoo-Italia-Associazione/l10n-italy/issues>`_.
+### Funders
 
-In case of trouble, please check there if your issue has already been reported.
+### Maintainer
 
+.. image:: http://odoo-community.org/logo.png
+   :alt: Odoo Community Association
+   :target: http://odoo-community.org
 
-Proposals for enhancement
---------------------------
+This module is maintained by the OCA.
 
-If you have a proposal to change this module, you may want to send an email to
-<moderatore@odoo-italia.org> for initial feedback.
-An Enhancement Proposal may be submitted if your idea gains ground.
+OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
 
+To contribute to this module, please visit http://odoo-community.org.
 
+[//]: # (copyright)
 
+----
 
+**Odoo** is a trademark of [Odoo S.A.](https://www.odoo.com/) (formerly OpenERP, formerly TinyERP)
 
-Credits / Riconoscimenti
-=========================
+**OCA**, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
 
-Authors / Autori
------------------
-
-* `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
-
-Contributors / Contributi
---------------------------
-
-* Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
-
-Maintainers / Manutezione
---------------------------
-
-|Odoo Italia Associazione|
-
-This module is maintained by the Odoo Italia Associazione.
-
-To contribute to this module, please visit https://odoo-italia.org/.
-
-
-
-----------------
-
-**Odoo** is a trademark of `Odoo S.A. <https://www.odoo.com/>`__
-(formerly OpenERP)
-
-**OCA**, or the `Odoo Community Association <http://odoo-community.org/>`__,
-is a nonprofit organization whose mission is to support
-the collaborative development of Odoo features and promote its widespread use.
-
-**Odoo Italia Associazione**, or the `Associazione Odoo Italia <https://www.odoo-italia.org/>`__
+**Odoo Italia Associazione**, or the [Associazione Odoo Italia](https://www.odoo-italia.org/)
 is the nonprofit Italian Community Association whose mission
 is to support the collaborative development of Odoo designed for Italian law and markeplace.
 Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
-or available only with `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
-Odoo Italia Associazione distributes code under `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
-or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free license.
+or available only with Odoo Proprietary License.
+Odoo Italia Associazione distributes code under [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) or [LGPL](https://www.gnu.org/licenses/lgpl.html) free license.
 
-`Odoo Italia Associazione <https://www.odoo-italia.org/>`__ è un'Associazione senza fine di lucro
+[Odoo Italia Associazione](https://www.odoo-italia.org/) è un'Associazione senza fine di lucro
 che dal 2017 rilascia moduli per la localizzazione italiana non sviluppati da OCA
-o disponibili solo con `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
+o disponibili solo con [Odoo Proprietary License](https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html).
 
-Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
-o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
+Odoo Italia Associazione distribuisce il codice esclusivamente con licenza [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) o [LGPL](https://www.gnu.org/licenses/lgpl.html)
+
+[//]: # (end copyright)
 
 
-|
 
-Last Update / Ultimo aggiornamento: 2018-10-29
 
-.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
-    :target: https://odoo-community.org/page/development-status
-    :alt: Alfa
-.. |Build Status| image:: https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy.svg?branch=10.0
-    :target: https://travis-ci.org/Odoo-Italia-Associazione/l10n-italy
-    :alt: github.com
-.. |license gpl| image:: https://img.shields.io/badge/licence-LGPL--3-7379c3.svg
-    :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
-    :alt: License: LGPL-3
-.. |Coverage Status| image:: https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0
-    :target: https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0
-    :alt: Coverage
-.. |Codecov Status| image:: https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0/graph/badge.svg
-    :target: https://codecov.io/gh/Odoo-Italia-Associazione/l10n-italy/branch/10.0
-    :alt: Codecov
-.. |OCA project| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg
-    :target: https://github.com/OCA/l10n-italy/tree/10.0
-    :alt: OCA
-.. |Tech Doc| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg
-    :target: https://wiki.zeroincombenze.org/en/Odoo/10.0/dev
-    :alt: Technical Documentation
-.. |Help| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg
-    :target: https://wiki.zeroincombenze.org/it/Odoo/10.0/man
-    :alt: Technical Documentation
-.. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
-    :target: https://odoo10.odoo-italia.org
-    :alt: Try Me
-.. |OCA Codecov Status| image:: badge-oca-codecov
-    :target: oca-codecov-URL
-    :alt: Codecov
-.. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
-   :target: https://odoo-italia.org
-   :alt: Odoo Italia Associazione
-.. |en| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/en_US.png
-   :target: https://www.facebook.com/groups/openerp.italia/
-.. |it| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/it_IT.png
-   :target: https://www.facebook.com/groups/openerp.italia/
-.. |check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/check.png
-.. |no_check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/no_check.png
-.. |menu| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/menu.png
-.. |right_do| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/right_do.png
-.. |exclamation| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/exclamation.png
-.. |warning| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/warning.png
-.. |same| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/same.png
-.. |late| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/late.png
-.. |halt| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/halt.png
-.. |info| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/info.png
-.. |xml_schema| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/iso/icons/xml-schema.png
-   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/iso/scope/xml-schema.md
-.. |DesktopTelematico| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/DesktopTelematico.png
-   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
-.. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
-   :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
+
 
 

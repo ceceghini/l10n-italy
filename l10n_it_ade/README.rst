@@ -1,18 +1,20 @@
-|Maturity| |Build Status| |license gpl| |Coverage Status| |Codecov Status| |OCA project| |Tech Doc| |Help| |Try Me|
-
-.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/10.0/l10n_it_ade/static/description/icon.png
-
 ============================
 |icon| Agenzia delle Entrate
 ============================
 
+**Codice e definizioni come da Agenzia delle Entrate**
+
+.. |icon| image:: https://raw.githubusercontent.com/Odoo-Italia-Associazione/l10n-italy/10.0/l10n_it_ade/static/description/icon.png
+
+|Maturity| |Build Status| |Coverage Status| |Codecov Status| |license gpl| |Tech Doc| |Help| |Try Me|
+
 .. contents::
 
+Overview / Panoramica
+=====================
 
-|en|
-
-Tax Authority Definitions
-==========================
+|en| Tax Authority Definitions
+==============================
 
 This module has no specific function for End-user.
 
@@ -22,11 +24,8 @@ Inside there are xml schema files used by FatturaPA, EInvoice and VAT settlement
 
 This module requires `PyXB 1.2.4 <http://pyxb.sourceforge.net/>`__
 
-
-|it|
-
-Definizioni Agenzia delle Entrate
-==================================
+|it| Definizioni Agenzia delle Entrate
+======================================
 
 Questo modulo non ha funzioni specifiche per l'utente finale.
 Contiene dati e definizioni stabilite dall'Agenzia delle Entrate
@@ -50,8 +49,11 @@ dallo schema dell'Agenzia delle Entrate devono dichiare il modulo
 Per maggiori informazioni visitare il sito www.odoo-italia.org o contattare
 l'ultimo autore: Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>.
 
+Features / Caratteristiche
+--------------------------
+
 Features / Funzioni
---------------------
+-------------------
 
 +------------------------------------------------------+----------+----------------------------------------------+
 | Feature / Funzione                                   |  Status  | Notes / Note                                 |
@@ -64,29 +66,11 @@ Features / Funzioni
 +------------------------------------------------------+----------+----------------------------------------------+
 
 
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Dato Fattura Elettronica       | Nome tecnico                 | Modulo OCA                  | Modulo OIA                  | Note tecnico OCA          | Nome tecnico OIA          | Note                                     |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Schema di definione xsd        |                              | l10n_it_fatturapa           | l10n_it_ade                 |                           |                           | Il modulo di OIA serve anche alla liquid |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Natura dell'IVA                |                              | l10n_it_account_tax_kind    | l10n_it_ade                 | account.tax.kind          | italy.ade.tax.nature      | Estensione della tabella account.tax usa |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Termini di pagamento           |                              | l10n_it_fiscal_payment_term | l10n_it_fiscal_payment_term | fatturapa.payment_term    | fatturapa.payment_term    | Modelli compatibili tra OIA e OCA        |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Metodi di pagamento            |                              | l10n_it_fiscal_payment_term | l10n_it_fiscal_payment_term | fatturapa.payment_method  | fatturapa.payment_method  | Modelli compatibili tra OIA e OCA        |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Codice Destinatario            | codice_destinatario          | l10n_it_fatturapa           | l10n_it_fiscal_ipa          | res.partner               | res.partner               |                                          |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Partner è PA?                 | is_pa                        | l10n_it_fatturapa           | l10n_it_fiscal_ipa          | res.partner               | res.partner               |                                          |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Soggetto a Fattura elettronica | electronic_invoice_subjected | l10n_it_fatturapa           | l10n_it_fiscal_ipa          | res.partner               | res.partner               | Il nome del campo è diverso             |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-| Regime Fiscale                 | fiscal_position              | l10n_it_fatturapa           | l10n_it_fatturapa           | fatturapa.fiscal_position | fatturapa.fiscal_position |                                          |
-+--------------------------------+------------------------------+-----------------------------+-----------------------------+---------------------------+---------------------------+------------------------------------------+
-
+Certifications / Certificazioni
+-------------------------------
 
 Certifications / Certificazioni
---------------------------------
+-------------------------------
 
 +----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+----------------------------------------------+
 | Logo                 | Ente/Certificato                                                                                                                                                                                                  | Data inizio   | Da fine      | Note                                         |
@@ -97,12 +81,39 @@ Certifications / Certificazioni
 +----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+--------------+----------------------------------------------+
 
 
+Usage / Utilizo
+---------------
 
-|en|
+Usage / Uso
+===========
 
+|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Natura dell'IVA
+
+|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Tipi Fattura
+
+|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Codice Carica
+
+
+OCA comparation / Confronto con OCA
+-----------------------------------
+
+|OCA project|
+
+
+Getting started / Come iniziare
+===============================
+
+|Try Me|
+
+
+Prerequisites / Prerequisiti
+----------------------------
+
+* python
+* postgresql 9.2+
 
 Installation / Installazione
-=============================
+----------------------------
 
 +---------------------------------+------------------------------------------+
 | |en|                            | |it|                                     |
@@ -111,16 +122,14 @@ Installation / Installazione
 | example to remember what        | distribuzioni Linux CentOS 7, Ubuntu 14+ |
 | you have to do on Linux.        | e Debian 8+                              |
 |                                 |                                          |
-| Installation is based on:       | L'installazione è basata su:             |
+| Installation is built with:     | L'installazione è costruita con:         |
 +---------------------------------+------------------------------------------+
 | `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__         |
 +---------------------------------+------------------------------------------+
 | Suggested deployment is         | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| **/opt/odoo/10.0/l10n-italy/**                                             |
+| /opt/odoo/10.0/l10n-italy/                                                 |
 +----------------------------------------------------------------------------+
-
-|
 
 ::
 
@@ -135,24 +144,14 @@ Installation / Installazione
     done
     sudo manage_odoo requirements -b 10.0 -vsy -o /opt/odoo/10.0
 
-
-|
-
 From UI: go to:
 
-|menu| Setting > Activate Developer mode 
-
-|menu| Apps > Update Apps List
-
-|menu| Setting > Apps |right_do| Select **l10n_it_ade** > Install
-
-|warning| If your Odoo instance crashes, you can do following instruction
-to recover installation status:
-
-``run_odoo_debug 10.0 -um l10n_it_ade -s -d MYDB``
+* |menu| Setting > Activate Developer mode 
+* |menu| Apps > Update Apps List
+* |menu| Setting > Apps |right_do| Select **l10n_it_ade** > Install
 
 Upgrade / Aggiornamento
-------------------------
+-----------------------
 
 +---------------------------------+------------------------------------------+
 | |en|                            | |it|                                     |
@@ -169,33 +168,22 @@ Upgrade / Aggiornamento
     # Adjust following statements as per your system
     sudo systemctl restart odoo
 
+From UI: go to:
+
+* |menu| Setting > Activate Developer mode
+* |menu| Apps > Update Apps List
+* |menu| Setting > Apps |right_do| Select **l10n_it_ade** > Update
+
+Support / Supporto
+------------------
+
+|Odoo Italia Associazione| This module is maintained by the Odoo Italia Associazione and support is supplied
+through its `forum <https://odoo-italia.org/index.php/kunena/recente>`__
 
 
 
-
-Usage / Uso
-============
-
-|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Natura dell'IVA
-
-|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Tipi Fattura
-
-|menu| Contabilità > Configurazione > Contabilità > Definizioni Agenzia delle Entrate > Codice Carica
-
-
-
-
-Known issues / Roadmap
-=======================
-
-|warning| Questo modulo rimpiazza il modulo OCA. Leggete attentamente il
-paragrafo relativo alle funzionalità e differenze.
-
-
-
-
-Issue Tracker
-==============
+Get involved / Ci mettiamo in gioco
+===================================
 
 Bug reports are welcome! You can use the issue tracker to report bugs,
 and/or submit pull requests on `GitHub Issues
@@ -203,43 +191,40 @@ and/or submit pull requests on `GitHub Issues
 
 In case of trouble, please check there if your issue has already been reported.
 
-
 Proposals for enhancement
---------------------------
+-------------------------
 
 If you have a proposal to change this module, you may want to send an email to
 <moderatore@odoo-italia.org> for initial feedback.
 An Enhancement Proposal may be submitted if your idea gains ground.
 
 
-
-
-
-Credits / Riconoscimenti
-=========================
+Credits / Titoli di coda
+========================
 
 Authors / Autori
------------------
+----------------
 
-* `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+* SHS-AV s.r.l. <https://www.zeroincombenze.it/>
 
-
-Contributors / Contributi
---------------------------
+Contributors / Contributi da
+----------------------------
 
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
+Acknowledges / Riconoscimenti
+-----------------------------
 
-Maintainers / Manutezione
---------------------------
-
-|Odoo Italia Associazione|
-
-This module is maintained by the Odoo Italia Associazione.
-
-To contribute to this module, please visit https://odoo-italia.org/.
-
-
++-----------------------------------+-------------------------------------------+
+| |en|                              | |it|                                      |
++-----------------------------------+-------------------------------------------+
+| This software inherits from past  | Questo software eredita da versioni       |
+| versions some parts of code. Even | passate alcune parti di codice. Anche     |
+| if people did not actively        | se non hanno partecipato attivamente allo |
+| participate to development, we    | allo sviluppo, noi siamo grati a tutte le |
+| acknowledge them for their prior  | persone che precedentemente vi hanno      |
+| contributions.                    | contribuito.                              |
++-----------------------------------+-------------------------------------------+
 
 ----------------
 
@@ -266,9 +251,12 @@ Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL
 o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
+|chat_with_us|
+
+
 |
 
-Last Update / Ultimo aggiornamento: 2018-10-29
+Last Update / Ultimo aggiornamento: 2018-11-02
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
@@ -297,12 +285,15 @@ Last Update / Ultimo aggiornamento: 2018-10-29
 .. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
     :target: https://odoo10.odoo-italia.org
     :alt: Try Me
-.. |OCA Codecov Status| image:: badge-oca-codecov
-    :target: oca-codecov-URL
+.. |OCA Codecov Status| image:: Unknown badge-oca-codecov
+    :target: Unknown oca-codecov-URL
     :alt: Codecov
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
    :target: https://odoo-italia.org
    :alt: Odoo Italia Associazione
+.. |Zeroincombenze| image:: https://avatars0.githubusercontent.com/u/6972555?s=460&v=4
+   :target: https://www.zeroincombenze.it/
+   :alt: Zeroincombenze
 .. |en| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/en_US.png
    :target: https://www.facebook.com/groups/openerp.italia/
 .. |it| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/it_IT.png
@@ -323,5 +314,5 @@ Last Update / Ultimo aggiornamento: 2018-10-29
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/DesktopTelematico.md
 .. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
-
-
+.. |chat_with_us| image:: https://www.shs-av.com/wp-content/chat_with_us.gif
+   :target: https://gitter.im/odoo_italia/development

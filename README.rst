@@ -1,6 +1,6 @@
-=====================
-l10n-italy Odoo 10.0 
-=====================
+==========================================
+|Odoo Italia Associazione| l10n-italy 10.0
+==========================================
 
 |Maturity| |Build Status| |Coverage Status| |Codecov Status| |license gpl| |Tech Doc| |Help| |Try Me|
 
@@ -9,16 +9,9 @@ l10n-italy Odoo 10.0
 Overview / Panoramica
 =====================
 
-|en| l10n-italy
-===============
+|en| Italian Localization
 
-Italian Localization
-
-
-|it| l10n-italy
-===============
-
-Localizzazione Italiana
+|it| Localizzazione Italiana
 
 La localizzazione italiana comprende moduli per la gestione delle principali
 incombenze fiscali che le imprese italiane devono gestire.
@@ -27,26 +20,14 @@ Sono coperte le aree:
 
 * Stampa registri IVA
 * Stampa libro giornale
-.. $versions 7.0 8.0 
-* Liquidazione IVA Elettronica
-* Comunicazione IVA Elettronica (ex Spesometro)
-.. $versions all
 * Registrazione fatture fornitori con RA
-.. $versions 7.0 8.0
-* Registrazione proposte di parcella da professionisti
-.. $versions all
-.. $versions 8.0
-* Emissione parcelle attive
-.. $versions all
 * FatturaPA
 * Fattura Elettronica B2B (in fase di sviluppo)
 * Gestione DdT
 * Data di registrazione fatture fornitori
 * Gestione Ricevute Bancarie
 * Split payment
-.. $versions 8.0 9.0 10.0
 * Documenti con Reverse Charge
-.. $versions all
 
 Avaiable Addons / Moduli disponibili
 ------------------------------------
@@ -54,19 +35,19 @@ Avaiable Addons / Moduli disponibili
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | Name / Nome                          | Version    | OCA Ver.   | Description / Descrizione                          |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| account_central_journal              | |halt|     | |same|     | Account Central Journal                            |
+| account_central_journal              | |halt|     | |halt|     | Account Central Journal                            |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | account_fiscal_year_closing          | |halt|     | |no_check| | Fiscal Year Closing                                |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| account_invoice_entry_date           | 10.0.0.1.0 | 10.0.8.0.0 | Account Invoice entry Date                         |
+| account_invoice_entry_date           | 10.0.0.1.0 | |halt|     | Account Invoice entry Date                         |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | account_invoice_report_ddt_group     | 10.0.0.3.1 | |same|     | Account invoice report grouped by DDT              |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| account_invoice_sequential_dates     | |halt|     | |same|     | Check invoice date consistency                     |
+| account_invoice_sequential_dates     | |halt|     | |halt|     | Check invoice date consistency                     |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | account_vat_period_end_statement     | 10.0.1.4.2 | |same|     | Period End VAT Statement                           |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| l10n_it_CEE_balance_generic          | |halt|     | |same|     | Italy - 4th EU Directive - Consolidation Chart of  |
+| l10n_it_CEE_balance_generic          | |halt|     | |halt|     | Italy - 4th EU Directive - Consolidation Chart of  |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_abicab                       | 10.0.1.0.0 | |same|     | Base Bank ABI/CAB codes                            |
 +--------------------------------------+------------+------------+----------------------------------------------------+
@@ -80,11 +61,11 @@ Avaiable Addons / Moduli disponibili
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_base                         | 10.0.0.1.3 | |no_check| | Italian Localisation - Base                        |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| l10n_it_base_crm                     | |halt|     | |same|     | Italian Localisation - CRM                         |
+| l10n_it_base_crm                     | |halt|     | |halt|     | Italian Localisation - CRM                         |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_base_location_geonames_impor | 10.0.1.0.0 | |same|     | Import base_location entries (provinces) from Geon |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| l10n_it_bill_of_entry                | |halt|     | |same|     | Italian Localisation - Bill of Entry               |
+| l10n_it_bill_of_entry                | |halt|     | |halt|     | Italian Localisation - Bill of Entry               |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_causali_pagamento            | |no_check| | 10.0.1.0.0 | Aggiunge la tabella delle causali di pagamento da  |
 +--------------------------------------+------------+------------+----------------------------------------------------+
@@ -130,11 +111,11 @@ Avaiable Addons / Moduli disponibili
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_location_nuts                | |no_check| | 10.0.1.0.0 | NUTS specific options for Italy                    |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| l10n_it_partially_deductible_vat     | |halt|     | |same|     | Italy - Partially Deductible VAT                   |
+| l10n_it_partially_deductible_vat     | |halt|     | |halt|     | Italy - Partially Deductible VAT                   |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_pec                          | 10.0.1.0.0 | |same|     | Pec Mail                                           |
 +--------------------------------------+------------+------------+----------------------------------------------------+
-| l10n_it_prima_nota_cassa             | |halt|     | |same|     | Italian Localisation - Prima Nota Cassa            |
+| l10n_it_prima_nota_cassa             | |halt|     | |halt|     | Italian Localisation - Prima Nota Cassa            |
 +--------------------------------------+------------+------------+----------------------------------------------------+
 | l10n_it_rea                          | 10.0.1.0.1 | 10.0.1.1.0 | Manage fields for  Economic Administrative catalog |
 +--------------------------------------+------------+------------+----------------------------------------------------+
@@ -292,7 +273,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-11-01
+Last Update / Ultimo aggiornamento: 2018-11-02
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
@@ -351,4 +332,4 @@ Last Update / Ultimo aggiornamento: 2018-11-01
 .. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
    :target: https://raw.githubusercontent.com/zeroincombenze/grymbcertificates/ade/scope/fatturapa.md
 .. |chat_with_us| image:: https://www.shs-av.com/wp-content/chat_with_us.gif
-   :target: https://gitter.im/Odoo-Italia-Associazione
+   :target: https://gitter.im/odoo_italia/development
