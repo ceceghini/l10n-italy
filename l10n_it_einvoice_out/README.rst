@@ -1,6 +1,8 @@
+
 ==================================================
 |icon| Italian Localization - FatturaPA - Emission
 ==================================================
+
 
 **Electronic invoices emission**
 
@@ -10,11 +12,12 @@
 
 .. contents::
 
+
 Overview / Panoramica
 =====================
 
 |en| EInvoice + FatturaPA
-=========================
+====================
 
 This module allows you to generate the fatturaPA XML file version 1.2
 which will be sent to the SdI (Exchange System by Italian Tax Authority)
@@ -27,7 +30,7 @@ http://www.fatturapa.gov.it/export/fatturazione/it/normativa/norme.htm
 subjected to update.
 
 |it| Fattura Elettronica + FatturaPA
-====================================
+===============================
 
 Questo modulo permette di generare il file xml della fatturaPA versione 1.2
 da trasmettere al sistema di interscambio SdI.
@@ -124,6 +127,7 @@ Getting started / Come iniziare
 Prerequisites / Prerequisiti
 ----------------------------
 
+
 * python
 * postgresql 9.2+
 
@@ -141,7 +145,7 @@ Installation / Installazione
 +---------------------------------+------------------------------------------+
 | `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__         |
 +---------------------------------+------------------------------------------+
-| Suggested deployment is         | Posizione suggerita per l'installazione: |
+| Suggested deployment is:        | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
 | /opt/odoo/10.0/l10n-italy/                                                 |
 +----------------------------------------------------------------------------+
@@ -178,8 +182,7 @@ Upgrade / Aggiornamento
 
 ::
 
-    cd /opt/odoo/10.0/l10n-italy/
-    git pull origin 10.0
+    odoo_install_repository l10n-italy -b 10.0 -O oia -U
     # Adjust following statements as per your system
     sudo systemctl restart odoo
 
@@ -191,6 +194,7 @@ From UI: go to:
 
 Support / Supporto
 ------------------
+
 
 |Odoo Italia Associazione| This module is maintained by the Odoo Italia Associazione and support is supplied
 through its `forum <https://odoo-italia.org/index.php/kunena/recente>`__
@@ -217,6 +221,12 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 Credits / Titoli di coda
 ========================
 
+Copyright
+---------
+
+Odoo is a trademark of `Odoo S.A. <https://www.odoo.com/>`__ (formerly OpenERP)
+
+
 Authors / Autori
 ----------------
 
@@ -224,7 +234,7 @@ Authors / Autori
 * `Innoviu srl <http://www.innoviu.com>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
-Contributors / Contributi da
+Contributors / Collaboratori
 ----------------------------
 
 * Davide Corio <davide.corio@abstract.it>
@@ -234,42 +244,22 @@ Contributors / Contributi da
 * Alex Comba <alex.comba@agilebg.com>
 * Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
-Acknowledges / Riconoscimenti
------------------------------
-
-+-----------------------------------+-------------------------------------------+
-| |en|                              | |it|                                      |
-+-----------------------------------+-------------------------------------------+
-| This software inherits from past  | Questo software eredita da versioni       |
-| versions some parts of code. Even | passate alcune parti di codice. Anche     |
-| if people did not actively        | se non hanno partecipato attivamente allo |
-| participate to development, we    | allo sviluppo, noi siamo grati a tutte le |
-| acknowledge them for their prior  | persone che precedentemente vi hanno      |
-| contributions.                    | contribuito.                              |
-+-----------------------------------+-------------------------------------------+
-
 ----------------
 
-**Odoo** is a trademark of `Odoo S.A. <https://www.odoo.com/>`__
-(formerly OpenERP)
-
-**OCA**, or the `Odoo Community Association <http://odoo-community.org/>`__,
-is a nonprofit organization whose mission is to support
-the collaborative development of Odoo features and promote its widespread use.
 
 **Odoo Italia Associazione**, or the `Associazione Odoo Italia <https://www.odoo-italia.org/>`__
-is the nonprofit Italian Community Association whose mission
-is to support the collaborative development of Odoo designed for Italian law and markeplace.
+is the nonprofit Italian Community Association born in 2011, whose mission is
+collaborative development of Odoo to cover Italian law and markeplace.
 Since 2017 Odoo Italia Associazione issues modules for Italian localization not developed by OCA
 or available only with `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
 Odoo Italia Associazione distributes code under `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
-or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free license.
+or `LGPL <https://www.gnu.org/licenses/lgpl.html>`__ free licenses.
 
-`Odoo Italia Associazione <https://www.odoo-italia.org/>`__ è un'Associazione senza fine di lucro
+`Odoo Italia Associazione <https://www.odoo-italia.org/>`__ è un'Associazione senza fine di lucro, nata nel 2011
 che dal 2017 rilascia moduli per la localizzazione italiana non sviluppati da OCA
 o disponibili solo con `Odoo Proprietary License <https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html>`__
 
-Odoo Italia Associazione distribuisce il codice esclusivamente con licenza `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
+Odoo Italia Associazione distribuisce il codice esclusivamente con licenze `AGPL <https://www.gnu.org/licenses/agpl-3.0.html>`__
 o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 
@@ -278,7 +268,7 @@ o `LGPL <https://www.gnu.org/licenses/lgpl.html>`__
 
 |
 
-Last Update / Ultimo aggiornamento: 2018-11-02
+Last Update / Ultimo aggiornamento: 2018-11-13
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
@@ -289,6 +279,9 @@ Last Update / Ultimo aggiornamento: 2018-11-02
 .. |license gpl| image:: https://img.shields.io/badge/licence-LGPL--3-7379c3.svg
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
+.. |license opl| image:: https://img.shields.io/badge/licence-OPL-7379c3.svg
+    :target: https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html
+    :alt: License: OPL
 .. |Coverage Status| image:: https://coveralls.io/repos/github/Odoo-Italia-Associazione/l10n-italy/badge.svg?branch=10.0
     :target: https://coveralls.io/github/Odoo-Italia-Associazione/l10n-italy?branch=10.0
     :alt: Coverage
